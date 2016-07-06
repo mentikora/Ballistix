@@ -128,6 +128,11 @@ p{ margin: 0; }
        url('fonts/MuseoSansCyrl900.svg#MuseoSansCyrl900') format('svg');
 }
 
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
 
 body{
 	font-family: 'Museo300', sans-serif;
@@ -140,7 +145,7 @@ body{
 .orange_title{
 	font-size: 46px;
 	line-height: 52px;
-	font-family: 'Museo700', sans-serif;
+	font-family: 'Museo900', sans-serif;
 
 	background: #e8b651;
 	background: -moz-linear-gradient(top, #e8b651 0%, #d99e29 61%, #d99e29 61%);
@@ -155,6 +160,9 @@ body{
 	color: #ffffff;
 	line-height: 28px;
 }
+.align_center{
+	text-align: center;
+}
 
 /* header */
 #header{
@@ -164,6 +172,7 @@ body{
 	z-index: 5;
 	width: 100%;
 	height: 95px;
+	padding-top: 35px;
 
 	display: flex;
 	flex-direction: row;
@@ -185,43 +194,63 @@ section.first{
 		margin-right: 40px;
 	}
 
-
-.second{
+/* second */
+section.second{
 	background: url('images/slide_2_bg.jpg') no-repeat 50% 0;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
 
 /* third */
-.third{
+section.third{
 	background-color: blue;
 }
-	.third .item{
+	section.third .item{
 		float: left;
 		width: calc(100%/3);
 		height: 100%;
+
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-content: space-around;
+
+		text-align: center;
 	}
-		.third .item.sport{
+		section.third .item img{
+			width: 33%;
+			margin: 80px auto;
+		}
+
+		section.third .item.sport{
 			background: url('images/sport_bg.jpg') no-repeat 50% 0;
 			-webkit-background-size: cover;
 			background-size: cover;
 		}
-		.third .item.tactical{
+		section.third .item.tactical{
 			background: url('images/tactical_bg.jpg') no-repeat 50% 0;
 			-webkit-background-size: cover;
 			background-size: cover;
 		}
-		.third .item.elite{
+		section.third .item.elite{
 			background: url('images/elite_bg.jpg') no-repeat 50% 0;
 			-webkit-background-size: cover;
 			background-size: cover;
 		}
-
-.four{
+	section.third .name{
+		text-transform: uppercase;
+		line-height: 60px;
+	}
+	section.third .name span{
+		font-size: 28px;
+		color: #fff;
+	}
+	section.third .name p{
+		font-size: 50px;
+		font-family: 'Museo900', sans-serif;
+	}
+/* four */
+section.four{
 	background: url('images/slide_4_bg.jpg') no-repeat 50% 0;
 	-webkit-background-size: cover;
 	background-size: cover;
