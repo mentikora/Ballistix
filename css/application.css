@@ -118,6 +118,16 @@ p{ margin: 0; }
        url('fonts/MuseoSansCyrl700.ttf') format('truetype'),
        url('fonts/MuseoSansCyrl700.svg#MuseoSansCyrl700') format('svg');
 }
+@font-face {
+  font-family: 'Museo900';
+  src: url('fonts/MuseoSansCyrl900.eot');
+  src: url('fonts/MuseoSansCyrl900.eot') format('embedded-opentype'),
+       url('fonts/MuseoSansCyrl900.woff2') format('woff2'),
+       url('fonts/MuseoSansCyrl900.woff') format('woff'),
+       url('fonts/MuseoSansCyrl900.ttf') format('truetype'),
+       url('fonts/MuseoSansCyrl900.svg#MuseoSansCyrl900') format('svg');
+}
+
 
 body{
 	font-family: 'Museo300', sans-serif;
