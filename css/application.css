@@ -1,0 +1,19 @@
+@import "theme-default.css";
+
+.first{
+	background-color: red;
+}
+.second{
+	background-color: green;
+}
+.third{
+	background-color: blue;
+}
+
+.test{
+	height: 300%;
+	float: right;
+	width: 250px;
+	margin-right: 250px;
+	overflow-y: auto;
+}
