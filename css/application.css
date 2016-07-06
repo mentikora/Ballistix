@@ -11,9 +11,10 @@
 }
 
 .test{
-	height: 300%;
-	float: right;
-	width: 250px;
-	margin-right: 250px;
-	overflow-y: auto;
+	height: 90%;
+  margin: 2%;
+  float: right;
+  width: 250px;
+  margin-right: 250px;
+  overflow-y: auto;
 }
