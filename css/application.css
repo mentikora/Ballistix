@@ -181,6 +181,8 @@ body{
 
 /* first */
 section.first{
+	padding-top: 120px;
+
 	background: url('images/slide_1_bg.jpg') no-repeat 50% 0;
 	-webkit-background-size: cover;
 	background-size: cover;
