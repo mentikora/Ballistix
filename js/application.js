@@ -6,16 +6,21 @@ $(document).ready(function() {
 
   // show menu
   $('#menu_btn').on('click', function(){
-    $('#menu').addClass('fadeInLeft').removeClass('fadeOutLeft').css('display', 'block');
+    $('#menu').addClass('slideInLeft').removeClass('slideOutLeft').css('display', 'block');
   });
 
   // close menu
-  $('.close_menu').on('click', function(){
-    $('#menu').addClass('fadeOutLeft').removeClass('fadeInLeft');
+  $('#menu .close_menu').on('click', function(){
+    $('#menu').addClass('slideOutLeft').removeClass('slideInLeft');
   });
 
   // show popup
   $('#popup_btn').on('click', function(){
-    $('#popUp').addClass('fadeInLeft').removeClass('fadeOutLeft').css('display', 'block');
+    $('#popUp').addClass('slideInLeft').removeClass('slideOutLeft').css('display', 'block');
+  });
+
+  // closepopup
+  $('#popUp .close_menu').on('click', function(){
+    $('#popUp').addClass('slideOutLeft').removeClass('slideInLeft');
   });
 });
