@@ -17,22 +17,62 @@
 	<meta name="theme-color" content="#eec061">
 </head>
 <body>
-	<div id="popUp"></div>
-	<div id="menu"></div>
+	<div id="popUp" class="animated">
+		<div class="popup_content">
+			<img src="img/ballistix-logo.svg" class="logo" alt="">
+			<p class="">выберите магазин</p>
+			<p class="text-style">
+				Советуем брать у проверенных продавцов
+				<br>
+				и избегать подделок
+			</p>
+			<img src="img/S2-shop-ulmart.png" alt="">
+			<img src="img/S2-shop-nix.png" alt="">
+			<img src="img/S2-shop-dns.png" alt="">
+			<img src="img/S2-shop-citilink.png" alt="">
+			<img src="img/S2-shop-fcenter.png" alt="">
+		</div>
+	</div>
+	<div id="menu" class="animated">
+		<div class="menu_content">
+		<div class="border_btn close_menu">
+			<img src="img/close.svg" alt="">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">главная</a></li>
+				<li><a href="#">Вопрос-ответ</a></li>
+				<li><a href="#">Модули памяти ballistix</a></li>
+				<li><a href="#">Видео-квест</a></li>
+			</ul>
+		</nav>
+		<div class="socials">
+			<a href="#">vk</a>
+			<a href="#">fb</a>
+			<a href="#">yt</a>
+			<a href="#">inst</a>
+		</div>
+		</div>
+	</div>
 	<header id="header">
-		<span class="menu_btn">
+		<span id="menu_btn" class="border_btn">
 			<img src="img/menu.svg" alt="">
 		</span>
-		<img src="img/ballistix-logo.svg" alt="">
-		<span>3</span>
+		<img src="img/ballistix-logo.svg" class="logo" alt="">
+		<div class="clearfix">
+			<span id="popup_btn" class="btn_bg pull-right">купить озу</span>
+			<div id="share_btn" class="border_btn pull-right">
+				<img src="img/share.svg" alt="">
+			</div>
+		</div>
 	</header>
 	<!-- content -->
 	<div id="fullpage">
 		<section class="section first">
 			<div class="container">
-				<div class="align_center">
+				<!-- <div class="align_center">
 					<img src="img/ballistix-built-to-win.svg" alt="">
-				</div>
+				</div> -->
 				<div class="top">
 					<div class="orange_title">
 						Зачем нужна оперативная
