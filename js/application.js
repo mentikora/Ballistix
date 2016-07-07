@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // initialize fullpage js
   $('#fullpage').fullpage({
-    normalScrollElements: '#menu'
+    normalScrollElements: '#menu, #popUp'
   });
 
   // show menu
@@ -12,5 +12,10 @@ $(document).ready(function() {
   // close menu
   $('.close_menu').on('click', function(){
     $('#menu').addClass('fadeOutLeft').removeClass('fadeInLeft');
+  });
+
+  // show popup
+  $('#popup_btn').on('click', function(){
+    $('#popUp').addClass('fadeInLeft').removeClass('fadeOutLeft').css('display', 'block');
   });
 });
