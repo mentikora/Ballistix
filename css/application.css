@@ -355,6 +355,10 @@ body{
 	flex-direction: row;
 	justify-content: space-between;
 }
+#header .logo{
+	display: block;
+	margin-right: -160px;
+}
 #header .btn_bg{
 	width: 168px;
 	height: 44px;
