@@ -74,9 +74,11 @@
 		<img src="img/ballistix-logo.svg" class="logo" alt="">
 		<div class="clearfix">
 			<span id="popup_btn" class="btn_bg pull-right">купить озу</span>
-			<div id="share_btn" class="border_btn pull-right">
-				<span></span>
-				s
+			<div id="share_btn" class="border_btn pull-right share">
+				<div class="twitter"></div>
+				<div class="facebook"></div>
+				<div class="googleplus"></div>
+				<div class="social"></div>
 				<!-- <img src="img/share.svg" alt=""> -->
 			</div>
 		</div>
@@ -363,5 +365,34 @@
 	<script src="js/fullPage.min.js"></script>
 	<script src="js/nanoScroll.js"></script>
 	<script src="js/application.js"></script>
+	<script src="http://cdn.getshar.es/lib/0.8.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.social').on('click', function () {
+			    return $('.share').toggleClass('active');
+			});
+			new GetShare({
+			    root: $('.twitter'),
+			    network: 'twitter',
+			    share: {
+			        url: 'http://colourco.de/',
+			        message: 'Colourcode - Find your colour sheme http://colourco.de'
+			    }
+			});
+			new GetShare({
+			    root: $('.facebook'),
+			    network: 'facebook',
+			    share: {
+			        url: 'http://colourco.de/',
+			        message: 'Colourcode - Find your colour sheme http://colourco.de'
+			    }
+			});
+			new GetShare({
+			    root: $('.googleplus'),
+			    network: 'googleplus',
+			    share: { url: 'http://colourco.de/' }
+			});
+		});
+	</script>
 </body>
 </html>

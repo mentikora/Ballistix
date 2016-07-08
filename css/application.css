@@ -1,3 +1,5 @@
+@import "sharebtn.css";
+
 /* reset meyer */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -372,7 +374,7 @@ body{
 		margin-top: 9px;
 	}
 /**/
-.border_btn span {
+/*.border_btn span {
 	position: absolute;
 	display: block;
 	width: 0;
@@ -394,7 +396,7 @@ body{
 }
 .border_btn:active {
   background: #d99e29;
-}
+}*/
 /**/
 .btn_bg{
 	color: #353535;
