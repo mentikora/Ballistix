@@ -132,6 +132,83 @@ p{ margin: 0; }
        url('fonts/MuseoSansCyrl900.svg#MuseoSansCyrl900') format('svg');
 }
 
+/* icomoon */
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?sbl6mv');
+    src:    url('fonts/icomoon.eot?sbl6mv#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?sbl6mv') format('truetype'),
+        url('fonts/icomoon.woff?sbl6mv') format('woff'),
+        url('fonts/icomoon.svg?sbl6mv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-ballistix-built-to-win:before {
+    content: "\e900";
+}
+.icon-ballistix-logo:before {
+    content: "\e901";
+}
+.icon-close:before {
+    content: "\e902";
+}
+.icon-icon-1:before {
+    content: "\e903";
+}
+.icon-icon-2:before {
+    content: "\e904";
+}
+.icon-icon-3:before {
+    content: "\e905";
+}
+.icon-menu:before {
+    content: "\e906";
+}
+.icon-play:before {
+    content: "\e907";
+}
+.icon-share:before {
+    content: "\e908";
+}
+.icon-socials-facebook:before {
+    content: "\e909";
+}
+.icon-socials-instagram:before {
+    content: "\e90a";
+}
+.icon-socials-twitter:before {
+    content: "\e90b";
+}
+.icon-socials-vkontakte:before {
+    content: "\e90c";
+}
+.icon-socials-youtube:before {
+    content: "\e90d";
+}
+
+.icon-icon-1,
+.icon-icon-2,
+.icon-icon-3{
+	color: #e3af45;
+	font-size: 64px;
+}
+.icon-share{
+	font-size: 18px;
+}
+
 *{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -220,25 +297,31 @@ body{
 	display: block;
 	width: 54px;
 	height: 44px;
+	line-height: 44px;
 	text-align: center;
 	cursor: pointer;
 
-	border: 2px solid #dda534;
+	border-left: 2px solid #dda534;
+	border-bottom: 2px solid #dda534;
+	border-top: 2px solid #eec061;
+	border-right: 2px solid #eec061;
 
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
+
 	position: relative;
 	overflow: hidden;
 }
-	.border_btn img{
-		margin-top: 11px;
-	}
-	#share_btn img{
-		width: 18px;
-		height: 20px;
-	}
-	.border_btn.close_menu img{
-		margin-top: 9px;
+	.border_btn:hover{
+		border: none;
+		line-height: 48px;
+		color: #242424;
+
+		background: #d99e29;
+		background: -moz-linear-gradient(45deg,  #d99e29 0%, #eec061 100%);
+		background: -webkit-linear-gradient(45deg,  #d99e29 0%,#eec061 100%);
+		background: linear-gradient(45deg,  #d99e29 0%,#eec061 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d99e29', endColorstr='#eec061',GradientType=1 );
 	}
 
 .btn_bg{
@@ -260,6 +343,7 @@ body{
 	.btn_bg:hover{
 		background: #fff;
 	}
+	
 #popup_btn{
 	-webkit-animation: pulse 3s infinite;
 	animation: pulse 3s infinite;
@@ -445,14 +529,15 @@ section.first{
 	section.first .container{
 		padding-top: 120px;
 		display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-around;
+	    flex-direction: column;
+	    height: 100%;
+	    justify-content: space-around;
 	}
 	section.first .bottom div{
 		float: left;
 		margin-right: 40px;
 	}
+
 
 /* second slide */
 section.second{
