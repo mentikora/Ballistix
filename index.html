@@ -22,11 +22,42 @@
 </head>
 <body>
 
+	<!-- menu -->
+	<div id="menu" class="animated">
+		<div class="menu_content">
+		<div class="border_btn close_menu">
+			<i class="icon-close"></i>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">главная</a></li>
+				<li><a href="#">Вопрос-ответ</a></li>
+				<li><a href="#">Модули памяти ballistix</a></li>
+				<li><a href="#">Видео-квест</a></li>
+			</ul>
+		</nav>
+		<div class="socials">
+			<a href="#">
+				<i class="icon-socials-twitter"></i>
+			</a>
+			<a href="#">
+				<i class="icon-socials-facebook"></i>
+			</a>
+			<a href="#">
+				<i class="icon-socials-youtube"></i>
+			</a>
+			<a href="#">
+				<i class="icon-socials-instagram"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+
 	<!-- popup -->
 	<div id="popUp" class="animated">
 		<div class="popup_content">
 			<div class="border_btn close_menu">
-				<img src="img/close.svg" alt="">
+				<i class="icon-close"></i>
 			</div>
 			<img src="img/ballistix-logo.svg" class="logo" alt="">
 			<p class="orange_title">выберите магазин</p>
@@ -42,51 +73,34 @@
 			<a href="javascript:void(0);" class="fcenter" target="_blank"></a>
 		</div>
 	</div>
-
-	<!-- menu -->
-	<div id="menu" class="animated">
-		<div class="menu_content">
-		<div class="border_btn close_menu">
-			<img src="img/close.svg" alt="">
-		</div>
-		<nav>
-			<ul>
-				<li><a href="#">главная</a></li>
-				<li><a href="#">Вопрос-ответ</a></li>
-				<li><a href="#">Модули памяти ballistix</a></li>
-				<li><a href="#">Видео-квест</a></li>
-			</ul>
-		</nav>
-		<div class="socials">
-			<a href="#">vk</a>
-			<a href="#">fb</a>
-			<a href="#">yt</a>
-			<a href="#">inst</a>
-		</div>
-		</div>
-	</div>
 	
 	<!-- header -->
 	<header id="header">
 		<span id="menu_btn" class="border_btn">
-			<img src="img/menu.svg" alt="">
+			<i class="icon-menu"></i>
+			<!-- <img src="img/menu.svg" alt=""> -->
 		</span>
 		<img src="img/ballistix-logo.svg" class="logo" alt="">
 		<div class="clearfix">
 			<span id="popup_btn" class="btn_bg pull-right">купить озу</span>
 			<div id="share_btn" class="border_btn pull-right">
-				<img src="img/share.svg" alt="">
+				<i class="icon-share"></i>
+				<!-- share ^ -->
+				<!-- <div class="twitter"></div>
+				<div class="facebook"></div>
+				<div class="googleplus"></div>
+				<div class="social"></div> -->
+				<!-- <img src="img/share.svg" alt=""> -->
 			</div>
 		</div>
 	</header>
+
+	<div class="arrow_scroll_down"></div>
 
 	<!-- content -->
 	<div id="fullpage">
 		<section class="section first">
 			<div class="container">
-				<!-- <div class="align_center">
-					<img src="img/ballistix-built-to-win.svg" alt="">
-				</div> -->
 				<div class="top">
 					<div class="orange_title">
 						Зачем нужна оперативная
@@ -100,21 +114,21 @@
 				</div>
 				<div class="clearfix bottom">
 					<div>
-						<img src="img/icon-1.svg" alt="">
+						<i class="icon-icon-1"></i>
 						<p class="text_style">
 							Самый простой способ <br>
 							усилить компьютер
 						</p>
 					</div>
 					<div>
-						<img src="img/icon-2.svg" alt="">
+						<i class="icon-icon-2"></i>
 						<p class="text_style">
 							Не требует <br>
 							технических навыков
 						</p>
 					</div>
 					<div>
-						<img src="img/icon-3.svg" alt="">
+						<i class="icon-icon-3"></i>
 						<p class="text_style">
 							Покупка не бьет <br>
 							по бюджету
@@ -124,207 +138,212 @@
 			</div>
 		</section>
 
-		<section class="section second active">
+		<section class="section second">
 			<div class="container">
-				<div class="clearfix orange_title">
-					Что нужно знать при выборе
+				<div class="clearfix">
+					<p class="orange_title">
+						Что нужно знать при выборе
+					</p>
+					<p class="orange_title">
+						оперативной памяти?
+					</p>
 				</div>
-				<div class="clearfix orange_title">
-					оперативной памяти?
+				<!-- for test -->
+				<div class="clearfix">
+					<aside class="question_menu pull-left">
+						<ol>
+						  <li>
+						  	<a href="javascript:void(0);">
+						  		Оперативка. А что это вообще такое?
+						  	</a>
+					  	</li>
+						  <li>
+						  	<a href="javascript:void(0);">
+						  		То есть оперативная память отвечает за все процессы, происходящие в компьютере, правильно?
+						  	</a>
+						  </li>
+						  <li>
+						  	<a href="javascript:void(0);">
+						  		Какие еще мегабайты? Давайте подробнее
+						  	</a>
+				  		</li>
+						  <li><a href="javascript:void(0);">Еще и типы памяти?</a></li>
+						  <li><a href="javascript:void(0);">Это вы вовремя сказали! Что еще мне важно знать?</a></li>
+						  <li><a href="javascript:void(0);">Надеюсь, это все?</a></li>
+						  <li><a href="javascript:void(0);">Хорошо. Вроде все понятно, давайте пример!</a></li>
+						  <li><a href="javascript:void(0);">Действительно! Все очень просто! Но если в техническом плане все понятно, то как выбрать производителя?</a></li>
+						  <li><a href="javascript:void(0);">То есть вы советуете выбирать их?</a></li>
+						  <li><a href="javascript:void(0);">Хорошо, а где советуете покупать оперативную память?</a></li>
+						</ol>
+					</aside>
+					<aside class="question_answer pull-right nano">
+						<div class="nano-content">
+							<!-- 1 -->
+							<div class="item_wrapper">
+								<img src="img/S2-box-header.png" alt="" class="img-responsive">
+								<div class="item">
+									
+									<h3 class="title">
+										<span>1. </span>
+										Оперативка. А что это вообще такое?
+									</h3>
+									<p class="text_style">
+										ОЗУ (оперативное запоминающее устройство), оно же RAM ("Random Access Memory" - память с произвольным доступом), представляет собой область временного хранения данных, при помощи которой обеспечивается функционирование программного обеспечения.
+
+										А если говорить человеческим языком - это память, которая содержит в себе запущенные на компьютере процессы: начиная от браузера и Skype, заканчивая играми и даже иконками на рабочем столе.
+									</p>
+								</div>
+							</div>
+							<!-- 2 -->
+							<div class="item_wrapper">
+								<img src="img/S2-box-header.png" alt="" class="img-responsive">
+								<div class="item">
+									<h3 class="title">
+										<span>2. </span>
+										То есть оперативная память отвечает за все процессы, происходящие в компьютере, правильно?
+									</h3>
+									<p class="text_style">
+										Можно сказать, и так. Когда-то пользователям ПК было достаточно и 32 Мбайта памяти, но сегодня требуются совершенно другие условия для нормальной работы компьютера. Если ваш компьютер начинает подвисать, «лагать» или «не тянет» новые программы и игры, возможно, что вашей оперативной памяти уже не хватает.
+									</p>
+								</div>
+							</div>
+							<!-- 3 -->
+							<div class="item_wrapper">
+								<img src="img/S2-box-header.png" alt="" class="img-responsive">
+								<div class="item">
+									<h3 class="title">
+										<span>3. </span>
+										Какие еще мегабайты? Давайте подробнее
+									</h3>
+									<p class="text_style">
+										Ок. Еще один важный параметр, про который говорят: «чем больше - тем лучше» - это объем. Сразу заметим, что, несмотря на то, что это существенная характеристика, зачастую ей приписывают чуть ли не все лавры в нелегком деле увеличения производительности ПК, что не всегда верно, однако имеет место быть. Сейчас практически все модули имеют более 4 ГБ объема памяти, так что сильно на этот параметр не обращайте внимания, 8 ГБ - более чем достаточно.
+										<br>
+										<br>
+										red - Для офисного ПК, пожалуй, этого достаточно. Но если вы обрабатываете фотки, рисуете 3D графику или увлекаетесь серьезными играми, конечно, нужно больше. Специально для этих целей и был создан Ballistix.
+									</p>
+								</div>
+							</div>
+							<!-- 4 -->
+							<div class="item_wrapper">
+								<img src="img/S2-box-header.png" alt="" class="img-responsive">
+								<div class="item">
+									<h3 class="title">
+										<span>4. </span>
+										Еще и типы памяти?
+									</h3>
+									<p class="text_style">
+										Да. Тут все просто. На данный момент можно говорить о двух типах памяти - DDR3 и DDR4. Чтобы не загружать вас огромными объемами информации, стоит сразу сказать, что DDR4 появился сравнительно недавно, так что этот тип актуален для самых современных компьютеров.
+
+										Чтобы узнать всю информацию о модуле оперативной памяти, его нужно внимательно рассмотреть, обычно производитель маркирует оперативку должной информацией о частоте, объёме и типе оперативной памяти. Если такой инфы на модуле нет, значит нужно узнать всё о материнской плате и установленном процессоре. 
+										ОЧЕНЬ ВАЖНО! Вы не можете установить память DDR4 к материнской плате для DDR3 и наоборот
+									</p>
+								</div>
+							</div>
+							<!-- 5 -->
+							<div class="item_wrapper">
+								<img src="img/S2-box-header.png" alt="" class="img-responsive">
+								<div class="item">
+									<h3 class="title">
+										<span>5. </span>
+										Это вы вовремя сказали! Что еще мне важно знать?
+									</h3>
+									<p class="text_style">
+										Пропуская способность - очень важный параметр. Звучит сложно, но на самом деле все очень просто: пропускная способность есть скорость передачи информации при использовании «наилучших» (оптимальных) для данного канала источников.
+
+										Она исчисляется в мегабайтах в секунду. Максимальная пропускная способность зависит от процессора, например, Intel. На сайте можно посмотреть максимальную пропускную способность для вашего вида процессора.
+
+										Но, если пропускная способность модуля оперативной памяти составляет лишь ½ или ¼ от максимальной, то все просто - берите KIT - набор модулей из нескольких планок, чтобы достичь максимальной пропускной способности.
+
+										Проще говоря, чем выше пропускная способность - тем лучше.
+									</p>
+								</div>
+							</div>
+							<!-- 6 -->
+							<div class="item_wrapper">
+								<img src="img/S2-box-header.png" alt="" class="img-responsive">
+								<div class="item">
+									<h3 class="title">
+										<span>6.</span>
+										Надеюсь, это все?
+									</h3>
+									<p class="text_style">
+										Почти. Давайте рассмотрим еще один параметр и перейдем к конкретным примерам.
+
+										Скорость - показывает насколько быстро процессы на компьютере будут обрабатываться и осуществляться. Скорость измеряется в МГц. Сегодня хорошей скоростью считается 2000 МГц +, а действительно быстрая скорость - 2666 МГц, например. У Ballistix уже доступны 3200МГц.
+									</p>
+								</div>
+							</div>
+							<!-- 7 -->
+							<div class="item_wrapper">
+								<img src="img/S2-box-header.png" alt="" class="img-responsive">
+								<div class="item">
+									<h3 class="title">
+										<span>7.</span>
+										Хорошо. Вроде все понятно, давайте пример!
+									</h3>
+									<p class="text_style">
+										Возьмем оперативную память Ballistix by Micron (ссылка) за образец:
+										<br>
+										img
+										<br>
+										Итак, у нас тип памяти DDR4, помним про нее? Она самая новая. Объем 8 ГБ - самый популярный объем. Пропускная способность 21300 - более, чем достаточно. 
+										Скорость 2666 МГц, как мы только что и говорили - такая скорость считается очень хорошей.
+										Видите, не так уж и сложно!
+									</p>
+								</div>
+							</div>
+							<!-- 8 -->
+							<div class="item_wrapper">
+								<img src="img/S2-box-header.png" alt="" class="img-responsive">
+								<div class="item">
+									<h3 class="title">
+										<span>8.</span>
+										Действительно! Все очень просто! Но если в техническом плане все понятно, то как выбрать производителя?
+									</h3>
+									<p class="text_style">
+										Хороший вопрос. Выбор производителя - это полностью ваша прерогатива, но есть еще один важный момент - чипы, которые используются в модулях оперативной памяти. Например, существуют чипы Micron, которые закупают компании производители оперативной памяти, но у Micron есть свой собственный бренд Ballistix (ссылка), который мы кстати и рассматривали выше.
+									</p>
+								</div>
+							</div>
+							<!-- 9 -->
+							<div class="item_wrapper">
+								<img src="img/S2-box-header.png" alt="" class="img-responsive">
+								<div class="item">
+									<h3 class="title">
+										<span>9. </span>
+										То есть вы советуете выбирать их?
+									</h3>
+									<p class="text_style">
+										На наш взгляд, намного надежнее брать оперативку у компании, которая сама производит чипы для нее, как делает Ballistix (ссылка), но выбор все равно только за вами.
+									</p>
+								</div>
+							</div>
+							<!-- 10 -->
+							<div class="item_wrapper">
+								<img src="img/S2-box-header.png" alt="" class="img-responsive">
+								<div class="item">
+									<h3 class="title">
+										<span>10. </span>
+										Хорошо, а где советуете покупать оперативную память?
+									</h3>
+									<p class="text_style">
+										Сейчас оперативную память можно найти в любом крупном магазине электроники, но по своему опыту советуем брать у проверенных продавцов и избегать подделок:
+
+										Ситилинк (лого + ссылка)
+
+										Фцентр (лого + ссылка)
+
+										Никс (лого + ссылка)
+
+										Юлмарт (лого + ссылка)
+
+										А DNS?
+									</p>
+								</div>
+							</div>
+						</div>
+					</aside>
 				</div>
-				<aside class="question_menu pull-left">
-					<ol>
-					  <li>
-					  	<a href="javascript:void(0);">
-					  		Оперативка. А что это вообще такое?
-					  	</a>
-				  	</li>
-					  <li>
-					  	<a href="javascript:void(0);">
-					  		То есть оперативная память отвечает за все процессы, происходящие в компьютере, правильно?
-					  	</a>
-					  </li>
-					  <li>
-					  	<a href="javascript:void(0);">
-					  		Какие еще мегабайты? Давайте подробнее
-					  	</a>
-			  		</li>
-					  <li><a href="javascript:void(0);">Еще и типы памяти?</a></li>
-					  <li><a href="javascript:void(0);">Это вы вовремя сказали! Что еще мне важно знать?</a></li>
-					  <li><a href="javascript:void(0);">Надеюсь, это все?</a></li>
-					  <li><a href="javascript:void(0);">Хорошо. Вроде все понятно, давайте пример!</a></li>
-					  <li><a href="javascript:void(0);">Действительно! Все очень просто! Но если в техническом плане все понятно, то как выбрать производителя?</a></li>
-					  <li><a href="javascript:void(0);">То есть вы советуете выбирать их?</a></li>
-					  <li><a href="javascript:void(0);">Хорошо, а где советуете покупать оперативную память?</a></li>
-					</ol>
-				</aside>
-				<aside class="question_answer pull-right nano">
-					<div class="nano-content">
-						<!-- 1 -->
-						<div class="item_wrapper">
-							<img src="img/S2-box-header.png" alt="" class="img-responsive">
-							<div class="item">
-								
-								<h3 class="title">
-									<span>1. </span>
-									Оперативка. А что это вообще такое?
-								</h3>
-								<p class="text_style">
-									ОЗУ (оперативное запоминающее устройство), оно же RAM ("Random Access Memory" - память с произвольным доступом), представляет собой область временного хранения данных, при помощи которой обеспечивается функционирование программного обеспечения.
-
-									А если говорить человеческим языком - это память, которая содержит в себе запущенные на компьютере процессы: начиная от браузера и Skype, заканчивая играми и даже иконками на рабочем столе.
-								</p>
-							</div>
-						</div>
-						<!-- 2 -->
-						<div class="item_wrapper">
-							<img src="img/S2-box-header.png" alt="" class="img-responsive">
-							<div class="item">
-								<h3 class="title">
-									<span>2. </span>
-									То есть оперативная память отвечает за все процессы, происходящие в компьютере, правильно?
-								</h3>
-								<p class="text_style">
-									Можно сказать, и так. Когда-то пользователям ПК было достаточно и 32 Мбайта памяти, но сегодня требуются совершенно другие условия для нормальной работы компьютера. Если ваш компьютер начинает подвисать, «лагать» или «не тянет» новые программы и игры, возможно, что вашей оперативной памяти уже не хватает.
-								</p>
-							</div>
-						</div>
-						<!-- 3 -->
-						<div class="item_wrapper">
-							<img src="img/S2-box-header.png" alt="" class="img-responsive">
-							<div class="item">
-								<h3 class="title">
-									<span>3. </span>
-									Какие еще мегабайты? Давайте подробнее
-								</h3>
-								<p class="text_style">
-									Ок. Еще один важный параметр, про который говорят: «чем больше - тем лучше» - это объем. Сразу заметим, что, несмотря на то, что это существенная характеристика, зачастую ей приписывают чуть ли не все лавры в нелегком деле увеличения производительности ПК, что не всегда верно, однако имеет место быть. Сейчас практически все модули имеют более 4 ГБ объема памяти, так что сильно на этот параметр не обращайте внимания, 8 ГБ - более чем достаточно.
-									<br>
-									<br>
-									red - Для офисного ПК, пожалуй, этого достаточно. Но если вы обрабатываете фотки, рисуете 3D графику или увлекаетесь серьезными играми, конечно, нужно больше. Специально для этих целей и был создан Ballistix.
-								</p>
-							</div>
-						</div>
-						<!-- 4 -->
-						<div class="item_wrapper">
-							<img src="img/S2-box-header.png" alt="" class="img-responsive">
-							<div class="item">
-								<h3 class="title">
-									<span>4. </span>
-									Еще и типы памяти?
-								</h3>
-								<p class="text_style">
-									Да. Тут все просто. На данный момент можно говорить о двух типах памяти - DDR3 и DDR4. Чтобы не загружать вас огромными объемами информации, стоит сразу сказать, что DDR4 появился сравнительно недавно, так что этот тип актуален для самых современных компьютеров.
-
-									Чтобы узнать всю информацию о модуле оперативной памяти, его нужно внимательно рассмотреть, обычно производитель маркирует оперативку должной информацией о частоте, объёме и типе оперативной памяти. Если такой инфы на модуле нет, значит нужно узнать всё о материнской плате и установленном процессоре. 
-									ОЧЕНЬ ВАЖНО! Вы не можете установить память DDR4 к материнской плате для DDR3 и наоборот
-								</p>
-							</div>
-						</div>
-						<!-- 5 -->
-						<div class="item_wrapper">
-							<img src="img/S2-box-header.png" alt="" class="img-responsive">
-							<div class="item">
-								<h3 class="title">
-									<span>5. </span>
-									Это вы вовремя сказали! Что еще мне важно знать?
-								</h3>
-								<p class="text_style">
-									Пропуская способность - очень важный параметр. Звучит сложно, но на самом деле все очень просто: пропускная способность есть скорость передачи информации при использовании «наилучших» (оптимальных) для данного канала источников.
-
-									Она исчисляется в мегабайтах в секунду. Максимальная пропускная способность зависит от процессора, например, Intel. На сайте можно посмотреть максимальную пропускную способность для вашего вида процессора.
-
-									Но, если пропускная способность модуля оперативной памяти составляет лишь ½ или ¼ от максимальной, то все просто - берите KIT - набор модулей из нескольких планок, чтобы достичь максимальной пропускной способности.
-
-									Проще говоря, чем выше пропускная способность - тем лучше.
-								</p>
-							</div>
-						</div>
-						<!-- 6 -->
-						<div class="item_wrapper">
-							<img src="img/S2-box-header.png" alt="" class="img-responsive">
-							<div class="item">
-								<h3 class="title">
-									<span>6.</span>
-									Надеюсь, это все?
-								</h3>
-								<p class="text_style">
-									Почти. Давайте рассмотрим еще один параметр и перейдем к конкретным примерам.
-
-									Скорость - показывает насколько быстро процессы на компьютере будут обрабатываться и осуществляться. Скорость измеряется в МГц. Сегодня хорошей скоростью считается 2000 МГц +, а действительно быстрая скорость - 2666 МГц, например. У Ballistix уже доступны 3200МГц.
-								</p>
-							</div>
-						</div>
-						<!-- 7 -->
-						<div class="item_wrapper">
-							<img src="img/S2-box-header.png" alt="" class="img-responsive">
-							<div class="item">
-								<h3 class="title">
-									<span>7.</span>
-									Хорошо. Вроде все понятно, давайте пример!
-								</h3>
-								<p class="text_style">
-									Возьмем оперативную память Ballistix by Micron (ссылка) за образец:
-									<br>
-									img
-									<br>
-									Итак, у нас тип памяти DDR4, помним про нее? Она самая новая. Объем 8 ГБ - самый популярный объем. Пропускная способность 21300 - более, чем достаточно. 
-									Скорость 2666 МГц, как мы только что и говорили - такая скорость считается очень хорошей.
-									Видите, не так уж и сложно!
-								</p>
-							</div>
-						</div>
-						<!-- 8 -->
-						<div class="item_wrapper">
-							<img src="img/S2-box-header.png" alt="" class="img-responsive">
-							<div class="item">
-								<h3 class="title">
-									<span>8.</span>
-									Действительно! Все очень просто! Но если в техническом плане все понятно, то как выбрать производителя?
-								</h3>
-								<p class="text_style">
-									Хороший вопрос. Выбор производителя - это полностью ваша прерогатива, но есть еще один важный момент - чипы, которые используются в модулях оперативной памяти. Например, существуют чипы Micron, которые закупают компании производители оперативной памяти, но у Micron есть свой собственный бренд Ballistix (ссылка), который мы кстати и рассматривали выше.
-								</p>
-							</div>
-						</div>
-						<!-- 9 -->
-						<div class="item_wrapper">
-							<img src="img/S2-box-header.png" alt="" class="img-responsive">
-							<div class="item">
-								<h3 class="title">
-									<span>9. </span>
-									То есть вы советуете выбирать их?
-								</h3>
-								<p class="text_style">
-									На наш взгляд, намного надежнее брать оперативку у компании, которая сама производит чипы для нее, как делает Ballistix (ссылка), но выбор все равно только за вами.
-								</p>
-							</div>
-						</div>
-						<!-- 10 -->
-						<div class="item_wrapper">
-							<img src="img/S2-box-header.png" alt="" class="img-responsive">
-							<div class="item">
-								<h3 class="title">
-									<span>10. </span>
-									Хорошо, а где советуете покупать оперативную память?
-								</h3>
-								<p class="text_style">
-									Сейчас оперативную память можно найти в любом крупном магазине электроники, но по своему опыту советуем брать у проверенных продавцов и избегать подделок:
-
-									Ситилинк (лого + ссылка)
-
-									Фцентр (лого + ссылка)
-
-									Никс (лого + ссылка)
-
-									Юлмарт (лого + ссылка)
-
-									А DNS?
-								</p>
-							</div>
-						</div>
-					</div>
-				</aside>
 			</div>
 		</section>
 
@@ -360,5 +379,34 @@
 	<script src="js/fullPage.min.js"></script>
 	<script src="js/nanoScroll.js"></script>
 	<script src="js/application.js"></script>
+	<script src="http://cdn.getshar.es/lib/0.8.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.social').on('click', function () {
+			    return $('.share').toggleClass('active');
+			});
+			new GetShare({
+			    root: $('.twitter'),
+			    network: 'twitter',
+			    share: {
+			        url: 'http://colourco.de/',
+			        message: 'Colourcode - Find your colour sheme http://colourco.de'
+			    }
+			});
+			new GetShare({
+			    root: $('.facebook'),
+			    network: 'facebook',
+			    share: {
+			        url: 'http://colourco.de/',
+			        message: 'Colourcode - Find your colour sheme http://colourco.de'
+			    }
+			});
+			new GetShare({
+			    root: $('.googleplus'),
+			    network: 'googleplus',
+			    share: { url: 'http://colourco.de/' }
+			});
+		});
+	</script>
 </body>
 </html>

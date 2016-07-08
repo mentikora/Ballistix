@@ -1,0 +1,99 @@
+.share {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+.share >div {
+  float: left;
+}
+.getshare input[type="checkbox"] {
+  display: none;
+}
+label {
+  cursor: pointer;
+  display: inline-block;
+}
+.getshare-counter:before {
+  content: '';
+  height: 20px;
+  display: inline-block;
+  background-position: 0% 30%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.share .twitter,
+.share .facebook,
+.share .googleplus {
+  -webkit-transform: translateX(30px);
+  -moz-transform: translateX(30px);
+  -o-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  margin-right: 20px;
+}
+.share.active .twitter,
+.share.active .facebook,
+.share.active .googleplus {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.twitter .getshare-counter:before {
+  background-image: url("http://andreasstorm.com/lib/twitter.svg");
+  -webkit-background-size: 16px;
+  -moz-background-size: 16px;
+  background-size: 16px;
+  width: 22px;
+}
+.facebook .getshare-counter:before {
+  background-image: url("http://andreasstorm.com/lib/facebook.svg");
+  -webkit-background-size: 7px;
+  -moz-background-size: 7px;
+  background-size: 7px;
+  width: 14px;
+}
+.googleplus .getshare-counter:before {
+  background-image: url("http://andreasstorm.com/lib/googleplus.svg");
+  -webkit-background-size: 16px;
+  -moz-background-size: 16px;
+  background-size: 16px;
+  width: 22px;
+}
+.getshare-counter {
+  color: #808080;
+  line-height: 20px;
+  height: 20px;
+  display: inline-block;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.getshare-counter:hover {
+  color: #b5b5b5;
+}
+.social {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: #222 url("http://andreasstorm.com/lib/share.svg") no-repeat center center;
+  -webkit-background-size: 16px;
+  -moz-background-size: 16px;
+  background-size: 16px;
+  position: relative;
+  z-index: 9999;
+}
