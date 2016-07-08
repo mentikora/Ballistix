@@ -10,6 +10,10 @@ $(document).ready(function() {
   $(".nano").nanoScroller({
     alwaysVisible: true
   });
+  // nano, scroll to el
+  $('.question_menu a').on('click', function(){
+    $(".nano").nanoScroller({ scrollTo: '#' + $(this).data('answer') });
+  });
 
   // show menu
   $('#menu_btn').on('click', function(){
@@ -31,4 +35,5 @@ $(document).ready(function() {
     $('#popUp').addClass('slideOutLeft').removeClass('slideInLeft');
   });
   
+
 });
