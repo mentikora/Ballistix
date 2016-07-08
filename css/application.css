@@ -1,4 +1,6 @@
+@import "animate.css";
 @import "sharebtn.css";
+@import "hoverAware.css";
 
 /* reset meyer */
 html, body, div, span, applet, object, iframe,
@@ -130,141 +132,6 @@ p{ margin: 0; }
        url('fonts/MuseoSansCyrl900.svg#MuseoSansCyrl900') format('svg');
 }
 
-/* animation */
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes slideInLeft {
-  from {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes slideInLeft {
-  from {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-.slideInLeft {
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-}
-
-@-webkit-keyframes slideOutLeft {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-@keyframes slideOutLeft {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    visibility: hidden;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-.slideOutLeft {
-  -webkit-animation-name: slideOutLeft;
-  animation-name: slideOutLeft;
-}
-@keyframes pulse {
-  0%, 80% {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  85% {
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  90% {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  95% {
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  100% {
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@keyframes bottom-arrow {
-  0% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-  45% {
-    opacity: 0;
-    transform: translate(12px, 12px);
-  }
-  46% {
-    opacity: 0;
-    transform: translate(-16px, -16px);
-  }
-  90% {
-    opacity: 1;
-    transform: translate(-6px, -6px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-6px, -6px);
-  }
-}
-@keyframes top-arrow {
-  0% {
-    transform: translate(-6px, -6px);
-  }
-  35% {
-    transform: translate(0, 0);
-  }
-  90% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
 *{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -373,31 +240,7 @@ body{
 	.border_btn.close_menu img{
 		margin-top: 9px;
 	}
-/**/
-/*.border_btn span {
-	position: absolute;
-	display: block;
-	width: 0;
-	height: 0;
-	border-radius: 50%;
-	background: #eec061;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	-webkit-transition: width 0.4s, height 0.4s;
-	transition: width 0.4s, height 0.4s;
-	z-index: -1;
-}
-.border_btn:hover {
-	color: #242424;
-}
-.border_btn:hover span{
-	width: 200.5px;
-	height: 200.5px;
-}
-.border_btn:active {
-  background: #d99e29;
-}*/
-/**/
+
 .btn_bg{
 	color: #353535;
 	font-family: 'Museo700', sans-serif;
@@ -438,8 +281,8 @@ body{
 }
 #popUp .close_menu{
 	position: absolute;
-  top: 40px;
-  right: 40px;
+	top: 40px;
+	right: 40px;
 }
 #popUp .popup_content{
 	display: flex;
@@ -613,14 +456,16 @@ section.first{
 
 /* second slide */
 section.second{
-	padding-top: 120px;
-  display: flex;
-  height: 100%;
-  justify-content: top;
-
 	background: url('images/slide_2_bg.jpg') no-repeat 50% 0;
 	-webkit-background-size: cover;
 	background-size: cover;
+}
+section.second .container{
+	padding-top: 120px;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
 section.second .question_menu{
 	width: 40%;
