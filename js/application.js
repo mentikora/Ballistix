@@ -1,7 +1,9 @@
 $(document).ready(function() {
   // initialize fullpage js
   $('#fullpage').fullpage({
-    normalScrollElements: '#menu, #popUp, .nano'
+    normalScrollElements: '#menu, #popUp, .nano',
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+    menu: '#fullPage_menu'
   });
 
   // nanoScroller
@@ -28,7 +30,5 @@ $(document).ready(function() {
   $('#popUp .close_menu').on('click', function(){
     $('#popUp').addClass('slideOutLeft').removeClass('slideInLeft');
   });
-
-  // share button header
   
 });
