@@ -192,6 +192,38 @@ p{ margin: 0; }
   -webkit-animation-name: slideOutLeft;
   animation-name: slideOutLeft;
 }
+@keyframes pulse {
+  0%, 80% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  85% {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  90% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  95% {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 
 *{
 	-webkit-box-sizing: border-box;
@@ -259,7 +291,6 @@ body{
 	.border_btn.close_menu img{
 		margin-top: 9px;
 	}
-
 .btn_bg{
 	color: #353535;
 	font-family: 'Museo700', sans-serif;
@@ -269,13 +300,23 @@ body{
 	cursor: pointer;
 
 	border-radius: 3px;
-	
+
 	background: #d99e29;
 	background: -moz-linear-gradient(45deg,  #d99e29 0%, #eec061 100%);
 	background: -webkit-linear-gradient(45deg,  #d99e29 0%,#eec061 100%);
 	background: linear-gradient(45deg,  #d99e29 0%,#eec061 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d99e29', endColorstr='#eec061',GradientType=1 );
 }
+	.btn_bg:hover{
+		background: #fff;
+	}
+#popup_btn{
+	-webkit-animation: pulse 3s infinite;
+	animation: pulse 3s infinite;
+}
+	#popup_btn:hover{
+		animation: none;
+	}
 
 /* popUp */
 #popUp{
