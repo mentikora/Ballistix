@@ -358,6 +358,8 @@ body{
 
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
+	position: relative;
+	overflow: hidden;
 }
 	.border_btn img{
 		margin-top: 11px;
@@ -369,6 +371,31 @@ body{
 	.border_btn.close_menu img{
 		margin-top: 9px;
 	}
+/**/
+.border_btn span {
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: #eec061;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: width 0.4s, height 0.4s;
+	transition: width 0.4s, height 0.4s;
+	z-index: -1;
+}
+.border_btn:hover {
+	color: #242424;
+}
+.border_btn:hover span{
+	width: 200.5px;
+	height: 200.5px;
+}
+.border_btn:active {
+  background: #d99e29;
+}
+/**/
 .btn_bg{
 	color: #353535;
 	font-family: 'Museo700', sans-serif;
