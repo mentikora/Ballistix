@@ -29,24 +29,33 @@
 			<i class="icon-close"></i>
 		</div>
 		<nav>
-			<ul>
-				<li><a href="#">главная</a></li>
-				<li><a href="#">Вопрос-ответ</a></li>
-				<li><a href="#">Модули памяти ballistix</a></li>
-				<li><a href="#">Видео-квест</a></li>
+			<ul id="fullPage_menu">
+				<li data-menuanchor="firstPage" class="active">
+					<a href="#firstPage">главная</a>
+				</li>
+				<li data-menuanchor="secondPage">
+					<a href="#secondPage">Вопрос-ответ</a>
+				</li>
+
+				<li data-menuanchor="thirdPage">
+					<a href="#thirdPage">Модули памяти ballistix</a>
+				</li>
+				<li data-menuanchor="fourthPage">
+					<a href="#fourthPage">Видео-квест</a>
+				</li>
 			</ul>
 		</nav>
 		<div class="socials">
-			<a href="#">
+			<a href="https://twitter.com/ballistixgaming" target="_blank">
 				<i class="icon-socials-twitter"></i>
 			</a>
-			<a href="#">
+			<a href="https://www.facebook.com/ballistixgaming" target="_blank">
 				<i class="icon-socials-facebook"></i>
 			</a>
-			<a href="#">
+			<a href="https://www.youtube.com/channel/UCoMUhjwcAJDUSBJpb6-WtHg" target="_blank">
 				<i class="icon-socials-youtube"></i>
 			</a>
-			<a href="#">
+			<a href="https://www.instagram.com/ballistixgaming/" target="_blank">
 				<i class="icon-socials-instagram"></i>
 			</a>
 		</div>
@@ -66,11 +75,11 @@
 				<br><br>
 				и избегать подделок
 			</p>
-			<a href="javascript:void(0);" class="ulmart" target="_blank"></a>
-			<a href="javascript:void(0);" class="nix" target="_blank"></a>
-			<a href="javascript:void(0);" class="dns" target="_blank"></a>
-			<a href="javascript:void(0);" class="citilink" target="_blank"></a>
-			<a href="javascript:void(0);" class="fcenter" target="_blank"></a>
+			<a href="https://www.ulmart.ru/" class="ulmart" target="_blank"></a>
+			<a href="http://www.nix.ru/" class="nix" target="_blank"></a>
+			<a href="http://www.dns-shop.ru/" class="dns" target="_blank"></a>
+			<a href="http://www.citilink.ru/" class="citilink" target="_blank"></a>
+			<a href="http://fcenter.ru/" class="fcenter" target="_blank"></a>
 		</div>
 	</div>
 	
@@ -99,7 +108,7 @@
 
 	<!-- content -->
 	<div id="fullpage">
-		<section class="section first">
+		<section class="section first" id="first">
 			<div class="container">
 				<div class="top">
 					<div class="orange_title">
@@ -138,7 +147,7 @@
 			</div>
 		</section>
 
-		<section class="section second">
+		<section class="section second" id="second">
 			<div class="container">
 				<div class="clearfix">
 					<p class="orange_title">
@@ -152,37 +161,24 @@
 				<div class="clearfix">
 					<aside class="question_menu pull-left">
 						<ol>
-						  <li>
-						  	<a href="javascript:void(0);">
-						  		Оперативка. А что это вообще такое?
-						  	</a>
-					  	</li>
-						  <li>
-						  	<a href="javascript:void(0);">
-						  		То есть оперативная память отвечает за все процессы, происходящие в компьютере, правильно?
-						  	</a>
-						  </li>
-						  <li>
-						  	<a href="javascript:void(0);">
-						  		Какие еще мегабайты? Давайте подробнее
-						  	</a>
-				  		</li>
-						  <li><a href="javascript:void(0);">Еще и типы памяти?</a></li>
-						  <li><a href="javascript:void(0);">Это вы вовремя сказали! Что еще мне важно знать?</a></li>
-						  <li><a href="javascript:void(0);">Надеюсь, это все?</a></li>
-						  <li><a href="javascript:void(0);">Хорошо. Вроде все понятно, давайте пример!</a></li>
-						  <li><a href="javascript:void(0);">Действительно! Все очень просто! Но если в техническом плане все понятно, то как выбрать производителя?</a></li>
-						  <li><a href="javascript:void(0);">То есть вы советуете выбирать их?</a></li>
-						  <li><a href="javascript:void(0);">Хорошо, а где советуете покупать оперативную память?</a></li>
+						  <li><a href="javascript:void(0);" data-answer='q1'>Оперативка. А что это вообще такое?</a></li>
+						  <li><a href="javascript:void(0);" data-answer='q2'>То есть оперативная память отвечает за все процессы, происходящие в компьютере, правильно?</a></li>
+						  <li><a href="javascript:void(0);" data-answer='q3'>Какие еще мегабайты? Давайте подробнее</a></li>
+						  <li><a href="javascript:void(0);" data-answer='q4'>Еще и типы памяти?</a></li>
+						  <li><a href="javascript:void(0);" data-answer='q5'>Это вы вовремя сказали! Что еще мне важно знать?</a></li>
+						  <li><a href="javascript:void(0);" data-answer='q6'>Надеюсь, это все?</a></li>
+						  <li><a href="javascript:void(0);" data-answer='q7'>Хорошо. Вроде все понятно, давайте пример!</a></li>
+						  <li><a href="javascript:void(0);" data-answer='q8'>Действительно! Все очень просто! Но если в техническом плане все понятно, то как выбрать производителя?</a></li>
+						  <li><a href="javascript:void(0);" data-answer='q9'>То есть вы советуете выбирать их?</a></li>
+						  <li><a href="javascript:void(0);" data-answer='q10'>Хорошо, а где советуете покупать оперативную память?</a></li>
 						</ol>
 					</aside>
-					<aside class="question_answer pull-right nano">
+					<aside class="question_answer pull-right nano" id="question_answer">
 						<div class="nano-content">
 							<!-- 1 -->
-							<div class="item_wrapper">
+							<div class="item_wrapper" id="q1">
 								<img src="img/S2-box-header.png" alt="" class="img-responsive">
 								<div class="item">
-									
 									<h3 class="title">
 										<span>1. </span>
 										Оперативка. А что это вообще такое?
@@ -195,7 +191,7 @@
 								</div>
 							</div>
 							<!-- 2 -->
-							<div class="item_wrapper">
+							<div class="item_wrapper" id="q2">
 								<img src="img/S2-box-header.png" alt="" class="img-responsive">
 								<div class="item">
 									<h3 class="title">
@@ -208,7 +204,7 @@
 								</div>
 							</div>
 							<!-- 3 -->
-							<div class="item_wrapper">
+							<div class="item_wrapper" id="q3">
 								<img src="img/S2-box-header.png" alt="" class="img-responsive">
 								<div class="item">
 									<h3 class="title">
@@ -224,7 +220,7 @@
 								</div>
 							</div>
 							<!-- 4 -->
-							<div class="item_wrapper">
+							<div class="item_wrapper" id="q4">
 								<img src="img/S2-box-header.png" alt="" class="img-responsive">
 								<div class="item">
 									<h3 class="title">
@@ -240,7 +236,7 @@
 								</div>
 							</div>
 							<!-- 5 -->
-							<div class="item_wrapper">
+							<div class="item_wrapper" id="q5">
 								<img src="img/S2-box-header.png" alt="" class="img-responsive">
 								<div class="item">
 									<h3 class="title">
@@ -259,7 +255,7 @@
 								</div>
 							</div>
 							<!-- 6 -->
-							<div class="item_wrapper">
+							<div class="item_wrapper" id="q6">
 								<img src="img/S2-box-header.png" alt="" class="img-responsive">
 								<div class="item">
 									<h3 class="title">
@@ -274,7 +270,7 @@
 								</div>
 							</div>
 							<!-- 7 -->
-							<div class="item_wrapper">
+							<div class="item_wrapper" id="q7">
 								<img src="img/S2-box-header.png" alt="" class="img-responsive">
 								<div class="item">
 									<h3 class="title">
@@ -293,7 +289,7 @@
 								</div>
 							</div>
 							<!-- 8 -->
-							<div class="item_wrapper">
+							<div class="item_wrapper" id="q8">
 								<img src="img/S2-box-header.png" alt="" class="img-responsive">
 								<div class="item">
 									<h3 class="title">
@@ -306,7 +302,7 @@
 								</div>
 							</div>
 							<!-- 9 -->
-							<div class="item_wrapper">
+							<div class="item_wrapper" id="q9">
 								<img src="img/S2-box-header.png" alt="" class="img-responsive">
 								<div class="item">
 									<h3 class="title">
@@ -319,7 +315,7 @@
 								</div>
 							</div>
 							<!-- 10 -->
-							<div class="item_wrapper">
+							<div class="item_wrapper" id="q10">
 								<img src="img/S2-box-header.png" alt="" class="img-responsive">
 								<div class="item">
 									<h3 class="title">
@@ -347,14 +343,14 @@
 			</div>
 		</section>
 
-		<section class="section third">
+		<section class="section third" id="third">
 			<div class="item sport">
 				<div class="name">
 					<span>Ballistix</span>
 					<p>Sport</p>
 				</div>
 				<img src="img/sport_logo.png" alt="" class="img-responsive">
-				<span>3</span>
+				<span class="btn_bg">выбрать</span>
 			</div>
 			<div class="item tactical">
 				<div class="name">
@@ -362,6 +358,7 @@
 					<p>Tactical</p>
 				</div>
 				<img src="img/tactical_logo.png" alt="" class="img-responsive">
+				<span class="btn_bg">выбрать</span>
 			</div>
 			<div class="item elite">
 				<div class="name">
@@ -369,44 +366,50 @@
 					<p>Elite</p>
 				</div>
 				<img src="img/elite_logo.png" alt="" class="img-responsive">
+				<span class="btn_bg">выбрать</span>
 			</div>	
 		</section>
 
-		<section class="section four">3</section>
+		<section class="section four" id="four">
+			<div class="container">
+				sdasd
+			</div>
+		</section>
 	</div>
 
 	<!-- script -->
 	<script src="js/fullPage.min.js"></script>
 	<script src="js/nanoScroll.js"></script>
+	<script src="js/getshare.js"></script>
 	<script src="js/application.js"></script>
-	<script src="http://cdn.getshar.es/lib/0.8.0.min.js"></script>
+	
 	<script>
-		$(document).ready(function(){
-			$('.social').on('click', function () {
-			    return $('.share').toggleClass('active');
-			});
-			new GetShare({
-			    root: $('.twitter'),
-			    network: 'twitter',
-			    share: {
-			        url: 'http://colourco.de/',
-			        message: 'Colourcode - Find your colour sheme http://colourco.de'
-			    }
-			});
-			new GetShare({
-			    root: $('.facebook'),
-			    network: 'facebook',
-			    share: {
-			        url: 'http://colourco.de/',
-			        message: 'Colourcode - Find your colour sheme http://colourco.de'
-			    }
-			});
-			new GetShare({
-			    root: $('.googleplus'),
-			    network: 'googleplus',
-			    share: { url: 'http://colourco.de/' }
-			});
-		});
+		// $(document).ready(function(){
+		// 	$('.social').on('click', function () {
+		// 	    return $('.share').toggleClass('active');
+		// 	});
+		// 	new GetShare({
+		// 	    root: $('.twitter'),
+		// 	    network: 'twitter',
+		// 	    share: {
+		// 	        url: 'http://colourco.de/',
+		// 	        message: 'Colourcode - Find your colour sheme http://colourco.de'
+		// 	    }
+		// 	});
+		// 	new GetShare({
+		// 	    root: $('.facebook'),
+		// 	    network: 'facebook',
+		// 	    share: {
+		// 	        url: 'http://colourco.de/',
+		// 	        message: 'Colourcode - Find your colour sheme http://colourco.de'
+		// 	    }
+		// 	});
+		// 	new GetShare({
+		// 	    root: $('.googleplus'),
+		// 	    network: 'googleplus',
+		// 	    share: { url: 'http://colourco.de/' }
+		// 	});
+		// });
 	</script>
 </body>
 </html>

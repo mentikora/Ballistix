@@ -1,6 +1,5 @@
 @import "animate.css";
 @import "sharebtn.css";
-@import "hoverAware.css";
 
 /* reset meyer */
 html, body, div, span, applet, object, iframe,
@@ -683,6 +682,14 @@ section.third{
 		font-size: 50px;
 		font-family: 'Museo900', sans-serif;
 	}
+section.third .btn_bg{
+	width: 167px;
+	height: 57px;
+	line-height: 57px;
+	margin: 0 auto;
+
+	font-size: 22px;
+}
 
 /* four slide */
 section.four{

@@ -1,12 +1,19 @@
 $(document).ready(function() {
+
   // initialize fullpage js
   $('#fullpage').fullpage({
-    normalScrollElements: '#menu, #popUp, .nano'
+    normalScrollElements: '#menu, #popUp, .nano',
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+    menu: '#fullPage_menu'
   });
 
-  // nanoScroller
+  // initialize nanoScroller
   $(".nano").nanoScroller({
     alwaysVisible: true
+  });
+  // nano, scroll to el
+  $('.question_menu a').on('click', function(){
+    $(".nano").nanoScroller({ scrollTo: '#' + $(this).data('answer') });
   });
 
   // show menu
@@ -28,7 +35,6 @@ $(document).ready(function() {
   $('#popUp .close_menu').on('click', function(){
     $('#popUp').addClass('slideOutLeft').removeClass('slideInLeft');
   });
-
-  // share button header
   
+
 });
