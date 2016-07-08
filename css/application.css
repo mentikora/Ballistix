@@ -143,6 +143,39 @@ p{ margin: 0; }
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?ottcmo');
+    src:    url('fonts/icomoon.eot?ottcmo#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?ottcmo') format('truetype'),
+        url('fonts/icomoon.woff?ottcmo') format('woff'),
+        url('fonts/icomoon.svg?ottcmo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?yocok3');
+    src:    url('fonts/icomoon.eot?yocok3#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?yocok3') format('truetype'),
+        url('fonts/icomoon.woff?yocok3') format('woff'),
+        url('fonts/icomoon.svg?yocok3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?jzu773');
+    src:    url('fonts/icomoon.eot?jzu773#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?jzu773') format('truetype'),
+        url('fonts/icomoon.woff?jzu773') format('woff'),
+        url('fonts/icomoon.svg?jzu773#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
@@ -152,15 +185,14 @@ p{ margin: 0; }
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.icon-ballistix-built-to-win:before {
+
+.icon-menu:before {
     content: "\e900";
-}
-.icon-ballistix-logo:before {
-    content: "\e901";
 }
 .icon-close:before {
     content: "\e902";
@@ -173,9 +205,6 @@ p{ margin: 0; }
 }
 .icon-icon-3:before {
     content: "\e905";
-}
-.icon-menu:before {
-    content: "\e906";
 }
 .icon-play:before {
     content: "\e907";
@@ -205,9 +234,8 @@ p{ margin: 0; }
 	color: #e3af45;
 	font-size: 64px;
 }
-.icon-share{
-	font-size: 18px;
-}
+.icon-share,
+.icon-menu{ font-size: 18px; }
 
 *{
 	-webkit-box-sizing: border-box;
@@ -343,7 +371,7 @@ body{
 	.btn_bg:hover{
 		background: #fff;
 	}
-	
+
 #popup_btn{
 	-webkit-animation: pulse 3s infinite;
 	animation: pulse 3s infinite;
