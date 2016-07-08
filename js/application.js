@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   // initialize fullpage js
   $('#fullpage').fullpage({
     normalScrollElements: '#menu, #popUp, .nano',
@@ -6,7 +7,7 @@ $(document).ready(function() {
     menu: '#fullPage_menu'
   });
 
-  // nanoScroller
+  // initialize nanoScroller
   $(".nano").nanoScroller({
     alwaysVisible: true
   });
