@@ -147,7 +147,6 @@ p{ margin: 0; }
     transform: translate3d(0, 0, 0);
   }
 }
-
 @keyframes slideInLeft {
   from {
     -webkit-transform: translate3d(-100%, 0, 0);
@@ -177,7 +176,6 @@ p{ margin: 0; }
     transform: translate3d(-100%, 0, 0);
   }
 }
-
 @keyframes slideOutLeft {
   from {
     -webkit-transform: translate3d(0, 0, 0);
@@ -190,7 +188,6 @@ p{ margin: 0; }
     transform: translate3d(-100%, 0, 0);
   }
 }
-
 .slideOutLeft {
   -webkit-animation-name: slideOutLeft;
   animation-name: slideOutLeft;
@@ -450,24 +447,16 @@ body{
 
 /* first slide */
 section.first{
-	background: url('images/slide_1_bg.jpg') no-repeat 50% 0;
+	background: url('images/slide_1_bg.jpg') no-repeat 50% bottom;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-	section.first .man{
-
-	}
 	section.first .container{
 		padding-top: 120px;
 		display: flex;
-	    flex-direction: column;
-	    height: 100%;
-	    justify-content: space-around;
-	}
-	section.first .top{
-	}
-	section.first .middle{
-
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
 	}
 	section.first .bottom div{
 		float: left;
@@ -476,10 +465,69 @@ section.first{
 
 /* second slide */
 section.second{
+	padding-top: 120px;
+  display: flex;
+  height: 100%;
+  justify-content: top;
+
 	background: url('images/slide_2_bg.jpg') no-repeat 50% 0;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+section.second .question_menu{
+	width: 40%;
+	margin-right: 5%;
+}
+	.question_menu ol{
+		list-style-type: decimal;
+	}
+	.question_menu li{
+		margin-bottom: 15px;
+	}
+	.question_menu a{
+		font-size: 16px;
+		line-height: 24px;
+		color: #fff;
+		text-decoration: none;
+	}
+	.question_menu a:hover{
+		color: #eec061;
+	}
+section.second .question_answer{
+	width: 55%;
+	min-height: 60vh;
+}
+.question_answer .item_wrapper{
+	margin-bottom: 50px;
+}
+	.question_answer .item_wrapper > img {
+		/* remove space from inline-block */
+		display: block;
+	}
+.question_answer .item{
+	padding: 0 50px 30px;
+	border: 2px solid #eec061;
+	border-top: 0;
+	position: relative;
+	
+	background-color: rgba(0,0,0, .5);
+}
+
+.question_answer .item h3{
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+	margin-top: -15px;
+
+	font-size: 24px;
+	line-height: 34px;
+}
+	.question_answer .item h3 span{
+		display: inline-block;
+		color: #eec061;
+	}
+.question_answer .item img{}
+.question_answer .item a{}
 
 /* third slide */
 section.third{

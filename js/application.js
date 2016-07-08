@@ -1,7 +1,12 @@
 $(document).ready(function() {
   // initialize fullpage js
   $('#fullpage').fullpage({
-    normalScrollElements: '#menu, #popUp'
+    normalScrollElements: '#menu, #popUp, .nano'
+  });
+
+  // nanoScroller
+  $(".nano").nanoScroller({
+    alwaysVisible: true
   });
 
   // show menu
