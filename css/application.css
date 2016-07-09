@@ -293,6 +293,10 @@ body{
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+.arrow_scroll_down.up{
+	-webkit-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+}
 	.arrow_scroll_down:after,
 	.arrow_scroll_down:before {
 		content: "";
@@ -870,7 +874,8 @@ section.four .btn_bg{
 	display: 	inline-block;
 	width: 55px;	
 	height: 55px;	
-	margin-bottom: 25px;
+	margin-top: 12px;
+	margin-bottom: 12px;
 	margin-left: 25px;
 
 	line-height: 55px;

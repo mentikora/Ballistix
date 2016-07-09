@@ -4,7 +4,22 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     normalScrollElements: '#menu, #popUp, .nano',
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-    menu: '#fullPage_menu'
+    menu: '#fullPage_menu',
+    afterLoad: function(anchorLink, index){
+      var loadedSection = $(this);
+      //using index
+      if(index == 4){
+        $('.arrow_scroll_down').addClass('up');
+      }
+    },
+    onLeave: function(index, nextIndex, direction){
+      var leavingSection = $(this);
+      if(index == 3 && direction =='down'){
+        $('.arrow_scroll_down').fadeOut(200);
+      } else {
+        $('.arrow_scroll_down').fadeIn(200);
+      }
+    }
   });
 
   // initialize nanoScroller
