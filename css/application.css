@@ -809,17 +809,78 @@ section.four{
     -ms-flex-pack: distribute;
     justify-content: space-around;
 	}
+section.four .iframe_wrapper{
+	min-width: 70%;
+	margin: 0 auto;
+	padding: 12px 50px;
+	
+	background: url('images/tablet_bg.png') no-repeat 50%;
+	-webkit-background-size: contain;
+	background-size: contain;
+
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.video_container{
+	position:relative;
+	padding-bottom:56.25%;
+	/*padding-top:30px;*/
+	height:0;
+	overflow:hidden;
+	background-color: #000;
+}
+	.video_container .fake_play{
+		z-index: 3;
+		cursor: pointer;
+
+		background: url('images/fake_play.jpg') no-repeat 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.video_container .fake_play .playbutton{
+		position: absolute;
+    top: 50%;  
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+		
+		color: #da9f2b;
+    font-size: 140px;
+		
+		-webkit-transition: all .15s ease;
+    transition: all .15s ease;
+	}
+		.video_container .fake_play:hover .playbutton{
+			color: #edbf5f;
+			font-size: 150px;
+		}
+.video_container iframe,
+.video_container .fake_play{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+}
+
 section.four .btn_bg{
 	display: 	inline-block;
 	width: 55px;	
 	height: 55px;	
 	margin-bottom: 25px;
+	margin-left: 25px;
 
 	line-height: 55px;
 	text-align: center;
 	border-radius: 50%;
 	color: #242424;	
 }
+	section.four .btn_bg:first-child{
+		margin-left: 0;
+	}
 section.four .copy{
 	font-size: 12px;
 	color: rgba(255,255,255, .15);

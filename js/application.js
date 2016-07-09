@@ -36,5 +36,11 @@ $(document).ready(function() {
     $('#popUp').addClass('slideOutLeft').removeClass('slideInLeft');
   });
   
+  // start slide-4 video on fake_play content click
+  $('.fake_play').on('click', function(event){
+    $(this).fadeOut(150);
+    $("#iframe")[0].src += "&autoplay=1";
+    event.preventDefault;
+  });
 
 });
