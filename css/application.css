@@ -406,7 +406,7 @@ body{
 .fcenter:hover{ background: url('images/S2-shop-fcenter-color.png') no-repeat 50%; }
 
 /* popUp */
-#popUp{
+.popUp{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -416,12 +416,12 @@ body{
 	z-index: 10;
 	display: none;
 }
-#popUp .close_menu{
+.popUp .close_menu{
 	position: absolute;
 	top: 40px;
 	right: 40px;
 }
-#popUp .popup_content{
+.popUp .popup_content{
 	/*display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -450,6 +450,7 @@ body{
 	text-align: center;
 }
 .popup_content a{
+	display: inline-block;
 	-webkit-transition: all .15s ease;
 	-o-transition: all .15s ease;
 	transition: all .15s ease;

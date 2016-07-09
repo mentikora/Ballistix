@@ -63,8 +63,9 @@
 	</div>
 
 	<!-- popup -->
-	<div id="popUp" class="animated">
-		<div class="popup_content">
+	<div class="animated popUp">
+		<!-- header popup -->
+		<div class="popup_content" id="header_popup">
 			<div class="border_btn close_menu">
 				<i class="icon-close"></i>
 			</div>
@@ -73,7 +74,61 @@
 			<p class="text-style">
 				Советуем брать у проверенных продавцов
 				<br><br>
-				и избегать подделок
+				и избегать подделок header popup
+			</p>
+			<a href="https://www.ulmart.ru/" class="ulmart" target="_blank"></a>
+			<a href="http://www.nix.ru/" class="nix" target="_blank"></a>
+			<a href="http://www.dns-shop.ru/" class="dns" target="_blank"></a>
+			<a href="http://www.citilink.ru/" class="citilink" target="_blank"></a>
+			<a href="http://fcenter.ru/" class="fcenter" target="_blank"></a>
+		</div>
+		<!-- sport popup -->
+		<div class="popup_content" id="sport_popup">
+			<div class="border_btn close_menu">
+				<i class="icon-close"></i>
+			</div>
+			<img src="img/ballistix-logo.svg" class="logo" alt="">
+			<p class="orange_title">выберите магазин</p>
+			<p class="text-style">
+				Советуем брать у проверенных продавцов
+				<br><br>
+				и избегать подделок sport popup
+			</p>
+			<a href="https://www.ulmart.ru/" class="ulmart" target="_blank"></a>
+			<a href="http://www.nix.ru/" class="nix" target="_blank"></a>
+			<a href="http://www.dns-shop.ru/" class="dns" target="_blank"></a>
+			<a href="http://www.citilink.ru/" class="citilink" target="_blank"></a>
+			<a href="http://fcenter.ru/" class="fcenter" target="_blank"></a>
+		</div>
+		<!-- tactical popup -->
+		<div class="popup_content" id="tactical_popup">
+			<div class="border_btn close_menu">
+				<i class="icon-close"></i>
+			</div>
+			<img src="img/ballistix-logo.svg" class="logo" alt="">
+			<p class="orange_title">выберите магазин</p>
+			<p class="text-style">
+				Советуем брать у проверенных продавцов
+				<br><br>
+				и избегать подделок tactical popup
+			</p>
+			<a href="https://www.ulmart.ru/" class="ulmart" target="_blank"></a>
+			<a href="http://www.nix.ru/" class="nix" target="_blank"></a>
+			<a href="http://www.dns-shop.ru/" class="dns" target="_blank"></a>
+			<a href="http://www.citilink.ru/" class="citilink" target="_blank"></a>
+			<a href="http://fcenter.ru/" class="fcenter" target="_blank"></a>
+		</div>
+		<!-- elite popup -->
+		<div class="popup_content" id="elite_popup">
+			<div class="border_btn close_menu">
+				<i class="icon-close"></i>
+			</div>
+			<img src="img/ballistix-logo.svg" class="logo" alt="">
+			<p class="orange_title">выберите магазин</p>
+			<p class="text-style">
+				Советуем брать у проверенных продавцов
+				<br><br>
+				и избегать подделок elite popup
 			</p>
 			<a href="https://www.ulmart.ru/" class="ulmart" target="_blank"></a>
 			<a href="http://www.nix.ru/" class="nix" target="_blank"></a>
@@ -83,6 +138,7 @@
 		</div>
 	</div>
 	
+	
 	<!-- header -->
 	<header id="header">
 		<span id="menu_btn" class="border_btn">
@@ -91,7 +147,7 @@
 		</span>
 		<img src="img/ballistix-logo.svg" class="logo" alt="">
 		<div class="clearfix">
-			<span id="popup_btn" class="btn_bg pull-right">купить озу</span>
+			<span class="btn_bg pull-right show_popup_btn" data-popup="header_popup">купить озу</span>
 			<div id="share_btn" class="border_btn pull-right">
 				<i class="icon-share"></i>
 				<!-- share ^ -->
@@ -350,7 +406,7 @@
 					<p>Sport</p>
 				</div>
 				<img src="img/sport_logo.png" alt="" class="img-responsive">
-				<span class="btn_bg">выбрать</span>
+				<span class="btn_bg show_popup_btn" data-popup="sport_popup">выбрать</span>
 			</div>
 			<div class="item tactical">
 				<div class="name">
@@ -358,7 +414,7 @@
 					<p>Tactical</p>
 				</div>
 				<img src="img/tactical_logo.png" alt="" class="img-responsive">
-				<span class="btn_bg">выбрать</span>
+				<span class="btn_bg show_popup_btn" data-popup="tactical_popup">выбрать</span>
 			</div>
 			<div class="item elite">
 				<div class="name">
@@ -366,7 +422,7 @@
 					<p>Elite</p>
 				</div>
 				<img src="img/elite_logo.png" alt="" class="img-responsive">
-				<span class="btn_bg">выбрать</span>
+				<span class="btn_bg show_popup_btn" data-popup="elite_popup">выбрать</span>
 			</div>	
 		</section>
 
