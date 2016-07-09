@@ -1,10 +1,13 @@
-.share {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-}
-.share >div {
+.share div > div {
   float: left;
+}
+.share > div {
+  position: absolute;
+  top: 0px;
+  right: 54px;
+  z-index: 2;
+  width: 200px;
+  line-height: 44px;
 }
 .getshare input[type="checkbox"] {
   display: none;

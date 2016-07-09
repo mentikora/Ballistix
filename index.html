@@ -143,19 +143,17 @@
 	<header id="header">
 		<span id="menu_btn" class="border_btn">
 			<i class="icon-menu"></i>
-			<!-- <img src="img/menu.svg" alt=""> -->
 		</span>
 		<img src="img/ballistix-logo.svg" class="logo" alt="">
 		<div class="clearfix">
 			<span class="btn_bg pull-right show_popup_btn" data-popup="header_popup">купить озу</span>
-			<div id="share_btn" class="border_btn pull-right">
+			<div id="share_btn" class="border_btn pull-right share">
 				<i class="icon-share"></i>
-				<!-- share ^ -->
-				<!-- <div class="twitter"></div>
-				<div class="facebook"></div>
-				<div class="googleplus"></div>
-				<div class="social"></div> -->
-				<!-- <img src="img/share.svg" alt=""> -->
+				<div>
+					<div class="twitter"></div>
+					<div class="facebook"></div>
+					<div class="googleplus"></div>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -469,32 +467,32 @@
 	<script src="js/application.js"></script>
 	
 	<script>
-		// $(document).ready(function(){
-		// 	$('.social').on('click', function () {
-		// 	    return $('.share').toggleClass('active');
-		// 	});
-		// 	new GetShare({
-		// 	    root: $('.twitter'),
-		// 	    network: 'twitter',
-		// 	    share: {
-		// 	        url: 'http://colourco.de/',
-		// 	        message: 'Colourcode - Find your colour sheme http://colourco.de'
-		// 	    }
-		// 	});
-		// 	new GetShare({
-		// 	    root: $('.facebook'),
-		// 	    network: 'facebook',
-		// 	    share: {
-		// 	        url: 'http://colourco.de/',
-		// 	        message: 'Colourcode - Find your colour sheme http://colourco.de'
-		// 	    }
-		// 	});
-		// 	new GetShare({
-		// 	    root: $('.googleplus'),
-		// 	    network: 'googleplus',
-		// 	    share: { url: 'http://colourco.de/' }
-		// 	});
-		// });
+		$(document).ready(function(){
+			$('#share_btn').on('click', function () {
+			    return $('.share').toggleClass('active');
+			});
+			new GetShare({
+			    root: $('.twitter'),
+			    network: 'twitter',
+			    share: {
+			        url: 'http://colourco.de/',
+			        message: 'Ballistix Gaming, find your way on http://colourco.de'
+			    }
+			});
+			new GetShare({
+			    root: $('.facebook'),
+			    network: 'facebook',
+			    share: {
+			        url: 'http://colourco.de/',
+			        message: 'Ballistix Gaming, find your way on http://colourco.de'
+			    }
+			});
+			new GetShare({
+			    root: $('.googleplus'),
+			    network: 'googleplus',
+			    share: { url: 'http://colourco.de/' }
+			});
+		});
 	</script>
 </body>
 </html>

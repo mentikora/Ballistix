@@ -352,7 +352,9 @@ body{
 	position: relative;
 	overflow: hidden;
 }
-	.border_btn:hover{
+	.border_btn:hover,
+	.border_btn.active{
+		overflow: visible;
 		border: none;
 		line-height: 48px;
 		color: #242424;
