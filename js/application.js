@@ -2,12 +2,11 @@ $(document).ready(function() {
 
   // initialize fullpage js
   $('#fullpage').fullpage({
-    normalScrollElements: '#menu, #popUp, .nano',
+    normalScrollElements: '#menu, .popUp, .nano',
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
     menu: '#fullPage_menu',
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
-      //using index
       if(index == 4){
         $('.arrow_scroll_down').addClass('up');
       }
@@ -42,13 +41,18 @@ $(document).ready(function() {
   });
 
   // show popup
-  $('#popup_btn').on('click', function(){
-    $('#popUp').addClass('slideInLeft').removeClass('slideOutLeft').css('display', 'block');
+  $('.show_popup_btn').on('click', function(){
+    var popup_data = $(this).data('popup');
+    console.log(popup_data);
+    $('.popUp').addClass('slideInLeft').removeClass('slideOutLeft').css('display', 'block');
+    $('.popUp .popup_content').css('display', 'none');
+    $('.popUp').find('#'+popup_data).css('display', 'flex');
   });
 
   // closepopup
-  $('#popUp .close_menu').on('click', function(){
-    $('#popUp').addClass('slideOutLeft').removeClass('slideInLeft');
+  $('.popUp .close_menu').on('click', function(){
+    //$('.popUp').addClass('slideOutLeft').removeClass('slideInLeft');
+    $(this).closest('.popUp').addClass('slideOutLeft').removeClass('slideInLeft');
   });
   
   // start slide-4 video on fake_play content click
