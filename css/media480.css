@@ -8,6 +8,10 @@
 	#header .logo{
 		display: none !important;
 	}
+	/* popup */
+	.popUp .logo{
+		visibility: hidden;
+	}
 
 	/* third item */
 	section.third .item{
