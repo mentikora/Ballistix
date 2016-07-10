@@ -233,9 +233,13 @@ p{ margin: 0; }
 	color: #e3af45;
 	font-size: 64px;
 }
-.icon-share,
-.icon-menu{ font-size: 18px; }
-
+.icon-share{ font-size: 18px; }
+.icon-menu{
+	position: relative;
+	font-size: 28px;
+	top: 4px;
+	left: 0;
+}
 *{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -418,6 +422,9 @@ body{
 	z-index: 10;
 	display: none;
 }
+.popUp .orange_title{
+	margin-bottom: 20px;
+}
 .popUp .close_menu{
 	position: absolute;
 	top: 40px;
@@ -526,6 +533,9 @@ body{
 		#menu li:first-child{
 			margin-top: 0;
 		}
+		#menu li.active a{
+			color: #eec061;
+		}
 	#menu nav a{
 		color: #fff;
 		text-decoration: none;
@@ -627,7 +637,7 @@ section.first{
 
 /* second slide */
 section.second{
-	background: url('images/slide_2_bg.jpg') no-repeat 50% 0;
+	background: url('images/slide_2_bg.jpg') no-repeat 50%;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -754,7 +764,7 @@ section.third{
 		align-content: space-around;
 	}
 		section.third .item img{
-			width: 33%;
+			width: 40%;
 			margin: 80px auto;
 		}
 
@@ -796,7 +806,7 @@ section.third .btn_bg{
 
 /* four slide */
 section.four{
-	background: url('images/slide_4_bg.jpg') no-repeat 50% 0;
+	background: url('images/slide_4_bg.jpg') no-repeat 50%;
 	-webkit-background-size: cover;
 	background-size: cover;
 }

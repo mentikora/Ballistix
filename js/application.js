@@ -8,7 +8,9 @@ $(document).ready(function() {
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
       if(index == 4){
-        $('.arrow_scroll_down').addClass('up');
+        $('.arrow_scroll_down').fadeOut(200);
+      } else{
+        $('.arrow_scroll_down').fadeIn(200);
       }
     },
     onLeave: function(index, nextIndex, direction){
@@ -42,10 +44,11 @@ $(document).ready(function() {
 
   // show popup
   $('.show_popup_btn').on('click', function(){
+    // get data-popup on btn click
     var popup_data = $(this).data('popup');
-    console.log(popup_data);
     $('.popUp').addClass('slideInLeft').removeClass('slideOutLeft').css('display', 'block');
     $('.popUp .popup_content').css('display', 'none');
+    // show content with data-popup
     $('.popUp').find('#'+popup_data).css('display', 'flex');
   });
 
