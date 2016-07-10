@@ -918,11 +918,13 @@ section.four .iframe_wrapper{
 	box-sizing: content-box;
 }
 section.four .bottom{
-	/*position: absolute;
-	width: 310px;
-	left: 50%;
-	margin-left: -155px;
-	bottom: 25px;*/
+	position: absolute;
+	/*width: 310px;*/
+	left: 0;
+	width: 100%;
+	/*margin-left: -155px;*/
+	text-align: center;
+	bottom: 25px;
 }
 section.four .iframe_wrapper:before{
 	content: '';
@@ -1002,9 +1004,9 @@ section.four .btn_bg{
 	display: 	inline-block;
 	width: 55px;	
 	height: 55px;	
-	margin-top: 12px;
+	/*margin-top: 12px;*/
 	/*margin-bottom: 25px;*/
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 	margin-left: 25px;
 
 	line-height: 55px;
