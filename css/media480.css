@@ -1,0 +1,20 @@
+@media(max-width: 480px){
+	.orange_title{
+		font-size: 26px !important;
+    line-height: 36px !important;
+	}
+
+	/* header */
+	#header .logo{
+		display: none !important;
+	}
+
+	/* third item */
+	section.third .item{
+		padding: 0 15px;
+		justify-content: space-between !important;
+	}
+	section.third img{
+		display: none !important;
+	}
+}

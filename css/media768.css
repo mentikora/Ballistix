@@ -1,0 +1,57 @@
+@media(max-width: 768px){
+	.text_style{
+		font-size: 14px !important;
+	}
+	.btn_bg.shop{
+		width: 55px !important;
+	}
+		.btn_bg.shop span{
+			display: none;
+		}
+		.btn_bg.shop i{
+			display: inline-block;
+		}
+	.orange_title{
+		font-size: 32px !important;
+    line-height: 40px !important;
+	}
+	/* header */
+	#header{ padding-top: 20px !important; }
+	#header #share_btn{ display: none; }
+	#header .logo{ margin: 0 !important; }
+
+	/* section 1 */
+	section.first .bottom{
+		text-align: center;
+	}
+	section.first .bottom div{
+		float: none !important;
+		margin: 10px 0 !important;
+	}
+	.icon-icon-1, .icon-icon-2, .icon-icon-3{
+		font-size: 34px !important;
+	}
+	/* section 3*/
+	section.third .wr_item{
+		padding-top: 120px;
+		height: 100%;
+	}	
+	section.third .item{
+		width: 100% !important;
+    float: none !important;
+    height: calc(100%/3) !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    text-align: left !important;
+	}	
+	section.third .item * {
+		margin: 0 !important;
+	}
+	section.third .name{
+		width: 30%;
+	}
+	section.third img{
+		width: 20% !important;
+	}
+}

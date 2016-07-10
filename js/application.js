@@ -64,5 +64,5 @@ $(document).ready(function() {
     $("#iframe")[0].src += "&autoplay=1";
     event.preventDefault;
   });
-
+  
 });
