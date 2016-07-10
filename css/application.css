@@ -418,6 +418,9 @@ body{
 	z-index: 10;
 	display: none;
 }
+.popUp .orange_title{
+	margin-bottom: 20px;
+}
 .popUp .close_menu{
 	position: absolute;
 	top: 40px;
