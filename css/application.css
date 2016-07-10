@@ -268,6 +268,12 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media(max-width: 991px){
+	.orange_title{
+		font-size: 38px;
+    line-height: 46px;
+	}
+}
 .text_style{
 	font-size: 18px;
 	color: #ffffff;
@@ -775,6 +781,20 @@ section.second .question_answer{
 .question_answer .item img{}
 .question_answer .item a{}
 
+@media(max-width: 991px){
+	section.second .question_menu{
+		display: none;
+	}
+	section.second .question_answer{
+		width: 100% !important;
+	}
+	.question_answer .item_wrapper > img{
+		width: 100%;
+	}
+	#q10 a{
+		float: none !important;
+	}
+}
 /* third slide */
 section.third{
 	background-color: blue;
@@ -910,6 +930,12 @@ section.four .iframe_wrapper:after{
 	height: 398px;
 	background: url('images/hand_right.png') no-repeat 0 0;
 }
+@media(max-width: 991px){
+	section.four .iframe_wrapper:before,
+	section.four .iframe_wrapper:after{
+		display: none !important;
+	}
+}
 .video_container{
 	position:relative;
 	padding-bottom:56.25%;
@@ -959,7 +985,7 @@ section.four .btn_bg{
 	width: 55px;	
 	height: 55px;	
 	margin-top: 12px;
-	margin-bottom: 12px;
+	margin-bottom: 25px;
 	margin-left: 25px;
 
 	line-height: 55px;
