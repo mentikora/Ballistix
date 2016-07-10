@@ -1,0 +1,17 @@
+@media(max-width: 991px){
+	.orange_title{
+		font-size: 38px !important;
+    line-height: 46px !important;
+	}
+	/* section 2*/
+	section.second .question_menu{ display: none; }
+	section.second .question_answer{ width: 100% !important; }
+	.question_answer .item_wrapper > img{ width: 100%; }
+	#q10 a{ float: none !important;}
+
+	/* section 4*/
+	section.four .iframe_wrapper:before,
+	section.four .iframe_wrapper:after{
+		display: none !important;
+	}
+}

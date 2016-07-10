@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>Ballistix Gaming</title>
 	
 	<!-- favicon -->
@@ -154,7 +155,10 @@
 		</span>
 		<img src="img/ballistix-logo.svg" class="logo" alt="">
 		<div class="clearfix">
-			<span class="btn_bg pull-right show_popup_btn" data-popup="header_popup">купить озу</span>
+			<span class="btn_bg pull-right show_popup_btn shop" data-popup="header_popup">
+				<span>купить озу</span>
+				<i class="icon-shop"></i>
+			</span>
 			<div id="share_btn" class="border_btn pull-right share">
 				<i class="icon-share"></i>
 				<div>
@@ -406,37 +410,50 @@
 		</section>
 
 		<section class="section third" id="third">
-			<div class="item sport">
-				<div class="name">
-					<span>Ballistix</span>
-					<p>Sport</p>
+			<div class="wr_item">
+				<div class="item sport">
+					<div class="name">
+						<span>Ballistix</span>
+						<p>Sport</p>
+					</div>
+					<img src="img/sport_logo.png" alt="" class="img-responsive">
+					<span class="btn_bg show_popup_btn shop" data-popup="sport_popup">
+						<span>выбрать</span>
+						<i class="icon-shop"></i>
+					</span>
 				</div>
-				<img src="img/sport_logo.png" alt="" class="img-responsive">
-				<span class="btn_bg show_popup_btn" data-popup="sport_popup">выбрать</span>
+				<div class="item tactical">
+					<div class="name">
+						<span>Ballistix</span>
+						<p>Tactical</p>
+					</div>
+					<img src="img/tactical_logo.png" alt="" class="img-responsive">
+					<span class="btn_bg show_popup_btn shop" data-popup="tactical_popup">
+						<span>выбрать</span>
+						<i class="icon-shop"></i>
+					</span>
+				</div>
+				<div class="item elite">
+					<div class="name">
+						<span>Ballistix</span>
+						<p>Elite</p>
+					</div>
+					<img src="img/elite_logo.png" alt="" class="img-responsive">
+					<span class="btn_bg show_popup_btn shop" data-popup="elite_popup">
+						<span>выбрать</span>
+						<i class="icon-shop"></i>
+					</span>
+				</div>	
 			</div>
-			<div class="item tactical">
-				<div class="name">
-					<span>Ballistix</span>
-					<p>Tactical</p>
-				</div>
-				<img src="img/tactical_logo.png" alt="" class="img-responsive">
-				<span class="btn_bg show_popup_btn" data-popup="tactical_popup">выбрать</span>
-			</div>
-			<div class="item elite">
-				<div class="name">
-					<span>Ballistix</span>
-					<p>Elite</p>
-				</div>
-				<img src="img/elite_logo.png" alt="" class="img-responsive">
-				<span class="btn_bg show_popup_btn" data-popup="elite_popup">выбрать</span>
-			</div>	
 		</section>
 
 		<section class="section four" id="four">
 			<div class="container align_center">
+				<p></p>
 				<p class="orange_title">
 					пройди видео-квест
 				</p>
+				<p></p>
 				<div class="iframe_wrapper">
 					<div class="video_container">
 						<div class="fake_play">
@@ -485,7 +502,7 @@
 			    root: $('.twitter'),
 			    network: 'twitter',
 			    share: {
-			        url: 'http://colourco.de/',
+			        url: 'google.com',
 			        message: 'Ballistix Gaming, find your way on http://colourco.de'
 			    }
 			});
@@ -493,14 +510,14 @@
 			    root: $('.facebook'),
 			    network: 'facebook',
 			    share: {
-			        url: 'http://colourco.de/',
+			        url: 'google.com',
 			        message: 'Ballistix Gaming, find your way on http://colourco.de'
 			    }
 			});
 			new GetShare({
 			    root: $('.googleplus'),
 			    network: 'googleplus',
-			    share: { url: 'http://colourco.de/' }
+			    share: { url: 'google.com' }
 			});
 		});
 	</script>

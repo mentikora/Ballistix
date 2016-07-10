@@ -1,6 +1,12 @@
 @import "animate.css";
 @import "sharebtn.css";
 
+
+@import "media981.css";
+@import "media768.css";
+@import "media480.css";
+
+
 /* reset meyer */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -73,6 +79,18 @@ p{ margin: 0; }
     max-width: 1140px;
   }
 }
+/* for HD*/
+@media only screen  and (min-width : 1824px) {
+	.question_menu a{
+		font-size: 18px !important;
+	}
+	section.four .container{
+		max-width: 1500px !important;
+	}
+	section.four .iframe_wrapper{
+		min-width: 80% !important;
+	}
+}
 
 /* clearfix */
 .clearfix:after {
@@ -133,65 +151,35 @@ p{ margin: 0; }
 
 /* icomoon */
 @font-face {
-    font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?sbl6mv');
-    src:    url('fonts/icomoon.eot?sbl6mv#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?sbl6mv') format('truetype'),
-        url('fonts/icomoon.woff?sbl6mv') format('woff'),
-        url('fonts/icomoon.svg?sbl6mv#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?ottcmo');
-    src:    url('fonts/icomoon.eot?ottcmo#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?ottcmo') format('truetype'),
-        url('fonts/icomoon.woff?ottcmo') format('woff'),
-        url('fonts/icomoon.svg?ottcmo#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?yocok3');
-    src:    url('fonts/icomoon.eot?yocok3#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?yocok3') format('truetype'),
-        url('fonts/icomoon.woff?yocok3') format('woff'),
-        url('fonts/icomoon.svg?yocok3#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?jzu773');
-    src:    url('fonts/icomoon.eot?jzu773#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?jzu773') format('truetype'),
-        url('fonts/icomoon.woff?jzu773') format('woff'),
-        url('fonts/icomoon.svg?jzu773#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'icomoon';
+  src:    url('fonts/icomoon.eot?q2pst');
+  src:    url('fonts/icomoon.eot?q2pst#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?q2pst') format('truetype'),
+      url('fonts/icomoon.woff?q2pst') format('woff'),
+      url('fonts/icomoon.svg?q2pst#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-.icon-menu:before {
+.icon-shop:before {
     content: "\e900";
+}
+.icon-menu:before {
+    content: "\e901";
 }
 .icon-close:before {
     content: "\e902";
@@ -241,6 +229,14 @@ p{ margin: 0; }
 	top: 4px;
 	left: 0;
 }
+.icon-shop{
+	display: none;
+	font-size: 28px;
+  position: relative;
+  top: 7px;
+  left: 0;
+}
+
 *{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -271,12 +267,6 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8b651', endColorstr='#d99e29',GradientType=0 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;*/
-}
-@media(max-width: 991px){
-	.orange_title{
-		font-size: 38px;
-    line-height: 46px;
-	}
 }
 .text_style{
 	font-size: 18px;
@@ -785,24 +775,13 @@ section.second .question_answer{
 .question_answer .item img{}
 .question_answer .item a{}
 
-@media(max-width: 991px){
-	section.second .question_menu{
-		display: none;
-	}
-	section.second .question_answer{
-		width: 100% !important;
-	}
-	.question_answer .item_wrapper > img{
-		width: 100%;
-	}
-	#q10 a{
-		float: none !important;
-	}
-}
 /* third slide */
 section.third{
-	background-color: blue;
+	background-color: #000;
 }
+	section.third .wr_item{
+		height: 100%;
+	}
 	section.third .item{
 		float: left;
 		width: calc(100%/3);
@@ -937,7 +916,7 @@ section.four .iframe_wrapper:before{
 	width: 280px;
 	/*height: 395px;*/
 	height: 495px;
-	background: url('images/hand_left_test.png') no-repeat 0 0;
+	background: url('images/hand_left.png') no-repeat 0 0;
 }
 section.four .iframe_wrapper:after{
 	content: '';
@@ -949,12 +928,6 @@ section.four .iframe_wrapper:after{
 	width: 353px;
 	height: 398px;
 	background: url('images/hand_right.png') no-repeat 0 0;
-}
-@media(max-width: 991px){
-	section.four .iframe_wrapper:before,
-	section.four .iframe_wrapper:after{
-		display: none !important;
-	}
 }
 .video_container{
 	position:relative;
