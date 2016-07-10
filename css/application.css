@@ -400,7 +400,29 @@ body{
 	}
 
 /* images bg*/
-.ulmart{ background: url('images/S2-shop-ulmart.png') no-repeat 50%; }
+.ulmart, .nix, .dns, .citilink, .fcenter{
+	background-image: url('images/sprite.png');
+	background-repeat: no-repeat;
+
+	position: relative;
+  text-indent: -9999px;
+}
+.ulmart span, .nix span, .dns span, .citilink span, .fcenter span{
+	position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0; 
+  background-image: url('images/sprite.png');
+  opacity: 0;
+	-webkit-transition: opacity .15s;
+	-moz-transition:    opacity .15s;
+	-o-transition:      opacity .15s;
+}
+.ulmart:hover span, .nix:hover span, .dns:hover span, .citilink:hover span, .fcenter:hover span{
+	opacity: 1;
+}
+/*.ulmart{ background: url('images/S2-shop-ulmart.png') no-repeat 50%; }
 .ulmart:hover{ background: url('images/S2-shop-ulmart-color.png') no-repeat 50%; }
 .nix{ background: url('images/S2-shop-nix.png') no-repeat 50%; }
 .nix:hover{ background: url('images/S2-shop-nix-color.png') no-repeat 50%; }
@@ -409,7 +431,33 @@ body{
 .citilink{ background: url('images/S2-shop-citilink.png') no-repeat 50%; }
 .citilink:hover{ background: url('images/S2-shop-citilink-color.png') no-repeat 50%; }
 .fcenter{ background: url('images/S2-shop-fcenter.png') no-repeat 50%; }
-.fcenter:hover{ background: url('images/S2-shop-fcenter-color.png') no-repeat 50%; }
+.fcenter:hover{ background: url('images/S2-shop-fcenter-color.png') no-repeat 50%; }*/
+
+.ulmart{ 
+	width: 183px;
+  height: 21px;
+	background-position: -5px -399px; }
+.ulmart span{ background-position: -5px -430px; }
+.nix{ 
+	width: 128px;
+  height: 44px;
+  background-position: -5px -291px; }
+.nix span{ background-position: -5px -345px; }
+.dns{ 
+	width: 109px;
+  height: 28px;
+  background-position: -5px -113px; }
+.dns span{ background-position: -5px -151px; }
+.citilink{ 
+	width: 183px;
+  height: 44px;
+  background-position: -5px -5px; }
+.citilink span{ background-position: -5px -59px; }
+.fcenter{ 
+	width: 127px;
+  height: 41px;
+  background-position: -5px -189px; }
+.fcenter span{ background-position: -5px -240px; }
 
 /* popUp */
 .popUp{
@@ -698,12 +746,8 @@ section.second .question_answer{
 	
 	#q10 a{
 		display: inline-block;
-		width: 25%;
-		margin: 15px 7% 15px 0;
-		height: 45px;
-
-		-webkit-background-size: contain;
-		background-size: contain;
+		float: left;
+		margin: 8px 15px 8px 0;
 	}
 
 .question_answer .item{
