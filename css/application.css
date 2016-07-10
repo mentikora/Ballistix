@@ -232,6 +232,7 @@ p{ margin: 0; }
 .icon-icon-3{
 	color: #e3af45;
 	font-size: 64px;
+	text-shadow: 0 0 10px #000;
 }
 .icon-share{ font-size: 18px; }
 .icon-menu{
@@ -260,13 +261,16 @@ body{
 	font-family: 'Museo900', sans-serif;
 	text-transform: uppercase;
 
-	background: #e8b651;
+	color: #eec061;
+	text-shadow: 0 0 20px rgba(0,0,0, .7);
+
+	/*background: #e8b651;
 	background: -moz-linear-gradient(top, #e8b651 0%, #d99e29 61%, #d99e29 61%);
 	background: -webkit-linear-gradient(top, #e8b651 0%,#d99e29 61%,#d99e29 61%);
 	background: linear-gradient(to bottom, #e8b651 0%,#d99e29 61%,#d99e29 61%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8b651', endColorstr='#d99e29',GradientType=0 );
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
 }
 @media(max-width: 991px){
 	.orange_title{
@@ -881,7 +885,7 @@ section.four{
     flex-direction: column;
     justify-content: space-around;*/
 
-    display: -webkit-box;
+    /*display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -892,13 +896,18 @@ section.four{
     flex-direction: column;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+    justify-content: space-around;*/
+    position: relative;
 	}
 section.four .iframe_wrapper{
-	min-width: 70%;
+	position: absolute;
+	left: 15%;
+	bottom: 203px;
+	/**/
+	min-width: 60%;
 	margin: 0 auto;
 	padding: 12px 50px;
-	position: relative;
+	/*position: relative;*/
 	
 	background: url('images/tablet_bg.png') no-repeat 50%;
 	-webkit-background-size: contain;
@@ -907,6 +916,13 @@ section.four .iframe_wrapper{
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
+}
+section.four .bottom{
+	position: absolute;
+	width: 310px;
+	left: 50%;
+	margin-left: -155px;
+	bottom: 25px;
 }
 section.four .iframe_wrapper:before{
 	content: '';
