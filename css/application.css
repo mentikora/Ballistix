@@ -929,11 +929,13 @@ section.four .iframe_wrapper:before{
 	display: block;
 	position: absolute;
 	z-index: 5;
-	bottom: -201px;
+	/*bottom: -201px;*/
+	bottom: -300px;
 	left: -120px;
 	width: 280px;
-	height: 395px;
-	background: url('images/hand_left.png') no-repeat 0 0;
+	/*height: 395px;*/
+	height: 495px;
+	background: url('images/hand_left_test.png') no-repeat 0 0;
 }
 section.four .iframe_wrapper:after{
 	content: '';
@@ -1001,7 +1003,8 @@ section.four .btn_bg{
 	width: 55px;	
 	height: 55px;	
 	margin-top: 12px;
-	margin-bottom: 25px;
+	/*margin-bottom: 25px;*/
+	margin-bottom: 50px;
 	margin-left: 25px;
 
 	line-height: 55px;
