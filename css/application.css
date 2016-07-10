@@ -233,9 +233,13 @@ p{ margin: 0; }
 	color: #e3af45;
 	font-size: 64px;
 }
-.icon-share,
-.icon-menu{ font-size: 18px; }
-
+.icon-share{ font-size: 18px; }
+.icon-menu{
+	position: relative;
+	font-size: 28px;
+	top: 4px;
+	left: 0;
+}
 *{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
