@@ -85,7 +85,10 @@ p{ margin: 0; }
 		font-size: 18px !important;
 	}
 	section.four .container{
-		width: 1500px !important;
+		max-width: 1500px !important;
+	}
+	section.four .iframe_wrapper{
+		min-width: 80% !important;
 	}
 }
 
@@ -913,7 +916,7 @@ section.four .iframe_wrapper:before{
 	width: 280px;
 	/*height: 395px;*/
 	height: 495px;
-	background: url('images/hand_left_test.png') no-repeat 0 0;
+	background: url('images/hand_left.png') no-repeat 0 0;
 }
 section.four .iframe_wrapper:after{
 	content: '';
