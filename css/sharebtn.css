@@ -76,7 +76,7 @@ label {
   width: 22px;
 }
 .getshare-counter {
-  color: #808080;
+  color: #fff;
   line-height: 20px;
   height: 20px;
   display: inline-block;
@@ -87,7 +87,7 @@ label {
   transition: color 0.3s ease;
 }
 .getshare-counter:hover {
-  color: #b5b5b5;
+  color: #eec061;
 }
 .social {
   cursor: pointer;
