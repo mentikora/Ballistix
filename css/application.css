@@ -87,9 +87,6 @@ p{ margin: 0; }
 	section.four .container{
 		max-width: 1500px !important;
 	}
-	section.four .iframe_wrapper{
-		min-width: 80% !important;
-	}
 }
 
 /* clearfix */
