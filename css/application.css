@@ -834,6 +834,7 @@ section.four .iframe_wrapper{
 	min-width: 70%;
 	margin: 0 auto;
 	padding: 12px 50px;
+	position: relative;
 	
 	background: url('images/tablet_bg.png') no-repeat 50%;
 	-webkit-background-size: contain;
@@ -842,6 +843,28 @@ section.four .iframe_wrapper{
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
+}
+section.four .iframe_wrapper:before{
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 5;
+	bottom: -201px;
+	left: -120px;
+	width: 280px;
+	height: 395px;
+	background: url('images/hand_left.png') no-repeat 0 0;
+}
+section.four .iframe_wrapper:after{
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 5;
+	bottom: -201px;
+	right: -258px;
+	width: 353px;
+	height: 398px;
+	background: url('images/hand_right.png') no-repeat 0 0;
 }
 .video_container{
 	position:relative;
