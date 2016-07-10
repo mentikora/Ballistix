@@ -261,7 +261,7 @@ body{
 	font-family: 'Museo900', sans-serif;
 	text-transform: uppercase;
 
-	color: #eec061;
+	color: #e4b046;
 	text-shadow: 0 0 20px rgba(0,0,0, .7);
 
 	/*background: #e8b651;
@@ -885,7 +885,7 @@ section.four{
     flex-direction: column;
     justify-content: space-around;*/
 
-    /*display: -webkit-box;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -896,18 +896,18 @@ section.four{
     flex-direction: column;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
-    justify-content: space-around;*/
+    justify-content: space-around;
     position: relative;
 	}
 section.four .iframe_wrapper{
-	position: absolute;
+	/*position: absolute;
 	left: 15%;
-	bottom: 203px;
+	bottom: 203px;*/
 	/**/
 	min-width: 60%;
 	margin: 0 auto;
 	padding: 12px 50px;
-	/*position: relative;*/
+	position: relative;
 	
 	background: url('images/tablet_bg.png') no-repeat 50%;
 	-webkit-background-size: contain;
@@ -918,11 +918,11 @@ section.four .iframe_wrapper{
 	box-sizing: content-box;
 }
 section.four .bottom{
-	position: absolute;
+	/*position: absolute;
 	width: 310px;
 	left: 50%;
 	margin-left: -155px;
-	bottom: 25px;
+	bottom: 25px;*/
 }
 section.four .iframe_wrapper:before{
 	content: '';
