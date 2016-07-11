@@ -27,6 +27,56 @@ $(document).ready(function() {
   $(".nano").nanoScroller({
     alwaysVisible: true
   });
+  /* custom start */
+  $(".nano").bind("update", function(e){
+    var scrollPercentage = e.target.nanoscroller.contentScrollTop / e.target.nanoscroller.contentHeight * 100;
+    var scrollPercentageFixed = scrollPercentage.toFixed(2);
+    var questions = $('.question_menu.pull-left ol');
+
+    if (scrollPercentageFixed >= 0.00 && scrollPercentageFixed < 9.00) {
+      questions.children().removeClass('active');
+      questions.children().eq(0).addClass('active');
+    } else if (scrollPercentageFixed >= 9.00 && scrollPercentageFixed < 18.00) {
+      questions.children().removeClass('active');
+      questions.children().eq(1).addClass('active');
+    } else if (scrollPercentageFixed >= 18.00 && scrollPercentageFixed < 30.00) {
+      questions.children().removeClass('active');
+      questions.children().eq(2).addClass('active');
+    } else if (scrollPercentageFixed >= 30.00 && scrollPercentageFixed < 44.00) {
+      questions.children().removeClass('active');
+      questions.children().eq(3).addClass('active');
+    } else if (scrollPercentageFixed >= 44.00 && scrollPercentageFixed < 58.50) {
+      questions.children().removeClass('active');
+      questions.children().eq(4).addClass('active');
+    } else if (scrollPercentageFixed >= 58.50 && scrollPercentageFixed < 67.00) {
+      questions.children().removeClass('active');
+      questions.children().eq(5).addClass('active');
+    } else if (scrollPercentageFixed >= 67.00 && scrollPercentageFixed < 76.00) {
+      questions.children().removeClass('active');
+      questions.children().eq(6).addClass('active');
+    } else if (scrollPercentageFixed >= 76.00 && scrollPercentageFixed < 85.00) {
+      questions.children().removeClass('active');
+      questions.children().eq(7).addClass('active');
+    } else if (scrollPercentageFixed >= 85.00 && scrollPercentageFixed < 91.00) {
+      questions.children().removeClass('active');
+      questions.children().eq(8).addClass('active');
+    } else if (scrollPercentageFixed >= 91.00 && scrollPercentageFixed < 100.00) {
+      questions.children().removeClass('active');
+      questions.children().eq(9).addClass('active');
+    }
+  });
+
+  $(".nano").bind("scrollend", function(e){
+    $('.question_menu.pull-left ol').children().removeClass('active');
+    $('.question_menu.pull-left ol').children().eq(9).addClass('active');
+  });
+
+  $(".nano").bind("scrolltop", function(e){
+    $('.question_menu.pull-left ol').children().removeClass('active');
+    $('.question_menu.pull-left ol').children().eq(0).addClass('active');
+  });
+  /* custom end */
+
   // nano, scroll to el
   $('.question_menu a').on('click', function(){
     $(".nano").nanoScroller({ scrollTo: '#' + $(this).data('answer') });

@@ -723,7 +723,8 @@ section.second .question_menu{
 		color: #fff;
 		text-decoration: none;
 	}
-	.question_menu a:hover{
+	.question_menu a:hover,
+	.question_menu .active a{
 		color: #eec061;
 	}
 section.second .question_answer{
