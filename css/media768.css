@@ -16,9 +16,14 @@
     line-height: 40px !important;
 	}
 	/* header */
-	#header{ padding-top: 20px !important; }
 	#header #share_btn{ display: none; }
 	#header .logo{ margin: 0 !important; }
+	
+	section.first .container,
+	section.second .container,
+	section.four .container{
+		padding-top: 84px !important;
+	}
 
 	/* section 1 */
 	section.first .bottom{
@@ -33,9 +38,8 @@
 	}
 	/* section 3*/
 	section.third .wr_item{
-		padding-top: 120px;
-		height: 100%;
-	}	
+		padding-top: 95px !important;
+	}
 	section.third .item{
 		width: 100% !important;
     float: none !important;
@@ -44,12 +48,20 @@
     justify-content: space-around !important;
     align-items: center !important;
     text-align: left !important;
+    padding-top: 0 !important;
 	}	
 	section.third .item * {
 		margin: 0 !important;
 	}
 	section.third .name{
 		width: 30%;
+		line-height: 50px !important;
+	}
+	section.third .name span{
+		font-size: 18px !important;
+	}
+	section.third .name p{
+		font-size: 40px !important;
 	}
 	section.third img{
 		width: 20% !important;

@@ -3,11 +3,35 @@
 		font-size: 38px !important;
     line-height: 46px !important;
 	}
+	/* containers padding-top */
+	section.first .container,
+	section.second .container,
+	section.four .container,
+	section.third .item{
+		padding-top: 95px !important;
+	}
+	/* popup */
+	.popUp .popup_content{
+		padding: 10 15px !important;
+	}
+	.popUp .close_menu{
+		top: 20px !important;
+		right: 15px !important;
+	}
+	/* menu */
+	#menu{
+		padding: 20px 15px !important;
+	}
+	/* header */
+	#header{ padding: 20px 15px 0 15px !important; }
+
 	/* section 2*/
 	section.second .question_menu{ display: none; }
 	section.second .question_answer{ width: 100% !important; }
 	.question_answer .item_wrapper > img{ width: 100%; }
 	#q10 a{ float: none !important;}
+	
+
 
 	/* section 4*/
 	section.four .iframe_wrapper:before,
