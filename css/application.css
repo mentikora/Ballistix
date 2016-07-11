@@ -784,6 +784,7 @@ section.third{
 		float: left;
 		width: calc(100%/3);
 		height: 100%;
+		padding-top: 120px;
 
 		text-align: center;
 
